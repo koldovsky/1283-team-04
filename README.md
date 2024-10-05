@@ -30,6 +30,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 
 # TEAM
 
-Andrij Riabush
-Olexandr Yarema
-Hryhorii Shtanko
+* Andrij Riabush
+* Olexandr Yarema
+* Hryhorii Shtanko
+* Vitali Sorokolit
