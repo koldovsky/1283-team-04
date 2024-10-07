@@ -370,33 +370,35 @@ body {
     align-items: center;
   }
 }
+
+/* Footer */
 footer {
   background: #272727;
   color: rgb(208 208 208);
 }
-footer .reward {
+.footer__reward {
   background: #1c4c97;
   padding: 30px 0;
 }
-.reward__wrapper {
+.footer__reward-wrapper {
   width: 1192px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-footer .reward p {
+.footer__reward-wrapper p {
   margin: 0;
-  color:#ffffff;
 }
-.reward__wrapper-question{
+.footer__reward-wrapper p span {
+  color: #ff6600;
+}
+.footer__reward-question{
   font-size: 22px;
   line-height: 30px;
+  color:#ffffff;
 }
-.reward__wrapper-desc{
+.footer__reward-desc{
   line-height: 60px;
-}
-.reward__wrapper p span {
-  color: #ff6600;
 }
 .footer__wrapper {
   padding-top: 120px;
@@ -455,6 +457,16 @@ footer .reward p {
   font-size: 25px;
   letter-spacing: 1px;
   font-weight: 200;
+  position: relative;
+}
+.footer__bottom h3::after {
+  content: "";
+  background:#1c4c97;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
 }
 .footer__bottom ul {
   padding: 0;
@@ -485,13 +497,21 @@ footer .reward p {
   border-radius: 6px;
   height: 25px;
   margin-right: 10px;
+  opacity: 0.7;
+}
+.footer__bottom-socials a img:hover {
+  opacity: 1;
 }
 .footer__bottom-subscribe {
   width: 25%;
 }
+.footer__bottom-subscribe form{
+  padding-top: 15px;
+}
 .footer__bottom-subscribe form input[type="text"] {
   padding: 10px;
   background: rgba(255, 255, 255, 0.02);
+  color: #ffffff;
   border: none;
   border-radius: 6px;
   display: block;
@@ -507,6 +527,14 @@ footer .reward p {
   border: 1px solid #ff6600;
   border-radius: 6px;
   cursor: pointer;
+}
+.footer__bottom-subscribe form input[type="submit"]:hover {
+  width: 100%;
+  background: #ffffff;
+  color: #272727;
+  ;
+  padding: 10px;
+  border: 1px solid #ffffff;
 }
 .footer__bottom-socials img {
   background: #00468b;
