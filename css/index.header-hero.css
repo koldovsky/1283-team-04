@@ -1,0 +1,143 @@
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  background-color: #f8f3ef;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .hero {
+    background: url("../images/cover.png") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero__content {
+  max-width: 600px;
+}
+
+.hero__title {
+  word-wrap: break-word;
+  font-size: 109px;
+  color: #272727;
+  line-height: 1;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.hero__description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hero__discount {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 15px;
+}
+
+.hero__button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.hero__button--primary {
+  background-color: #007bff;
+}
+
+.hero__button--primary:hover {
+  background-color: #0056b3;
+}
+
+.hero__button--secondary {
+  background-color: #ff6600;
+}
+
+.hero__button--secondary:hover {
+  background-color: #cc5200;
+}
+
+.hero__categories {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.hero__category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6a6a6a;
+  font-size: 0.9rem;
+}
+
+.hero__category-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(60%);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+  }
+
+  .hero__categories {
+    flex-direction: column;
+    align-items: center;
+  }
+}

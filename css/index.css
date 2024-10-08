@@ -1,0 +1,6 @@
+@import url(global.css);
+@import url(global.header-nav.css);
+@import url(index.header-hero.css);
+
+/*Розбити по файлах та видалити.*/
+@import url(style.css);
