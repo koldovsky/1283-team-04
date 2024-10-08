@@ -68,6 +68,7 @@ footer {
   }
   .footer__top-services .service-item img {
     width: 70px;
+    display: inline-block;
   }
   .footer__top-services .service-item p {
     text-align: center;
@@ -85,6 +86,7 @@ footer {
     letter-spacing: 1px;
     font-weight: 200;
     position: relative;
+    margin-bottom: 20px;
   }
   .footer__bottom h3::after {
     content: "";
@@ -117,6 +119,7 @@ footer {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 20px;
+    margin: 15px 0;
   }
   .footer__bottom-socials a img {
     background: #00468b;
@@ -125,6 +128,7 @@ footer {
     height: 25px;
     margin-right: 10px;
     opacity: 0.7;
+    display: inline-block;
   }
   .footer__bottom-socials a img:hover {
     opacity: 1;
