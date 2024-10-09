@@ -40,3 +40,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 * Sirobaba Mykyta
 * Rubai Oleh
 * Olena Unhuryan
+* Vlad Strochuk
