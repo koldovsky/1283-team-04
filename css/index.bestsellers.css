@@ -2,6 +2,11 @@
     display: flex;
     gap: 20px;
   }
+
+  .bestsellers__container{
+    display: flex;
+    justify-content: space-around;
+  }
   
   .bestsellers__item {
     background-color: #f4f4f4;
