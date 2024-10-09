@@ -1,6 +1,7 @@
 @import url(global.css);
 @import url(global.header-nav.css);
 @import url(index.header-hero.css);
+@import url(index.bestsellers.css);
 @import url(global.footer.css);
 
 /*Розбити по файлах та видалити.*/
