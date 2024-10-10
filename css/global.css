@@ -24,6 +24,7 @@ body {
   --secondary-background-color: #1c4c97;
   --primary-text-color: rgb(39, 39, 39);
   --secondary-text-color: rgb(208 208 208);
+  --text-color: rgb(106, 106, 106);
   --border-color: rgb(78 78 78);
   --secondary-border-color: rgb(230 230 230);
 }
