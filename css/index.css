@@ -2,7 +2,9 @@
 @import url(global.header-nav.css);
 @import url(index.header-hero.css);
 @import url(index.bestsellers.css);
+@import url(index.join-us-now.css);
+@import url(index.positive-aspects.css);
 @import url(global.footer.css);
 
 /*Розбити по файлах та видалити.*/
-@import url(style.css);
+
