@@ -51,14 +51,15 @@
   margin-top: 50px;
 }
 
-.testimonials__slider-item {
-  text-align: center;
-  display: none;
-}
-
 .testimonials__slider-item.active {
   text-align: center;
   display: block;
+  max-width: 770px;
+  margin: 50px auto 0;
+}
+
+.testimonials__slider-item {
+  display: none;
 }
 
 .testimonials__slider-item-quotes img {
@@ -72,6 +73,14 @@
   font-size: 24px;
   color: var(--primary-text-color);
   font-weight: 700;
+}
+
+.testimonials__slider-item-text {
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: var(--secondary-text-color);
 }
 
 .testimonials__slider-item-date {
