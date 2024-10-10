@@ -8,8 +8,8 @@
   text-transform: uppercase;
   text-align: center;
 }
-.testimonials__subtitle span{
-    color: var(--secondary-background-color);
+.testimonials__subtitle span {
+  color: var(--secondary-background-color);
 }
 .testimonials__subtitle {
   text-align: center;
@@ -19,6 +19,12 @@
 .testimonials__description {
   text-align: center;
   font-size: 19px;
+}
+.testimonials__image img {
+  border-radius: 10px;
+}
+.testimonials__slider-item {
+  text-align: center;
 }
 .testimonials__slider-item-quotes img {
   width: 50px;
