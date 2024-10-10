@@ -1,12 +1,5 @@
 /* Footer */
-:root{
-  --primary-color: #ff6600;
-  --secondary-color: #ffffff;
-  --primary-background-color: #272727;
-  --secondary-background-color: #1c4c97;
-  --secondary-text-color: rgb(208 208 208);
-  --border-color:rgb(78 78 78);
-}
+
 footer {
   background: var(--primary-background-color);
   color: var(--secondary-text-color);
