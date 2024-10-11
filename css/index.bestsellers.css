@@ -10,60 +10,54 @@
   gap: 20px;
 }
 
-/* KeyGo X1 section */
-.bestsellers__item--keygo, 
-.bestsellers__item--quantum, 
-.bestsellers__item--aerotrack {
+.bestsellers__item {
   position: relative;
   flex: 1;
-  overflow: hidden;
   border-radius: 10px;
-  background-color: #f2f2f2; /* Add a background similar to your provided example */
+  overflow: hidden;
 }
 
-/* Text styles */
-/* BESTSELLER text */
+.bestsellers__text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .bestsellers__item-type {
   font-family: 'Nunito', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 17px;
   color: rgb(255, 123, 22);
-  margin: 20px;
 }
 
-/* KeyGo X1 Title */
 .bestsellers__item-title {
   font-family: 'Nunito', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 33px;
   line-height: 46px;
-  color: rgb(39, 39, 39);
-  margin: 10px 20px;
 }
 
-/* Wireless headphones Description */
 .bestsellers__item-description {
   font-family: 'Nunito', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
-  color: rgb(106, 106, 106);
-  margin: 5px 20px;
 }
 
-/* Image Styling */
 .bestsellers__item-image {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  filter: brightness(0.7); /* Темніє зображення для кращої видимості тексту */
 }
 
-/* For responsiveness */
+/* Responsive */
 @media (max-width: 768px) {
   .bestsellers__container {
     flex-direction: column;
