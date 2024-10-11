@@ -16,51 +16,51 @@
   position: relative;
   flex: 1;
   overflow: hidden;
-  border-radius: 10px; /* Додає округлені краї */
+  border-radius: 0; /* Remove rounded corners */
+  background-color: white; /* Add background color */
 }
 
 .bestsellers__item-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px; /* Впливає на зображення також */
+  border-radius: 0; /* Remove image rounding */
 }
 
-.bestsellers__item-type, 
-.bestsellers__item-title, 
-.bestsellers__item-description {
-  position: absolute;
-  color: white;
-  z-index: 10;
-  margin: 0;
-}
-
+/* Adjust bestseller type to be more like the second image */
 .bestsellers__item-type {
-  top: 20px;
-  left: 20px;
-  font-size: 16px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 14px; /* Slightly smaller */
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: rgba(0, 0, 0, 0.6); /* Підкладка для тексту */
-  padding: 5px 10px;
-  border-radius: 5px;
+  letter-spacing: normal; /* Remove letter-spacing */
+  background-color: transparent; /* No background color */
+  padding: 0; /* Remove padding */
+  color: #FF6600; /* Match orange color from second image */
 }
 
+/* Title adjustments to match second image */
 .bestsellers__item-title {
+  position: absolute;
   top: 50px;
-  left: 20px;
-  font-size: 24px;
-  font-weight: bold;
+  left: 15px;
+  font-size: 22px; /* Slightly smaller font */
+  font-weight: normal; /* Less bold */
+  color: black; /* Change to black */
 }
 
+/* Description adjustments */
 .bestsellers__item-description {
-  bottom: 20px;
-  left: 20px;
-  font-size: 18px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 16px; /* Slightly smaller */
+  color: black; /* Change to black */
 }
 
-/* Для адаптивного дизайну */
+/* For responsive design */
 @media (max-width: 768px) {
   .bestsellers__container {
       flex-direction: column;
