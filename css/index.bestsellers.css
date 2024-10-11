@@ -10,68 +10,64 @@
   gap: 20px;
 }
 
+/* KeyGo X1 section */
 .bestsellers__item--keygo, 
 .bestsellers__item--quantum, 
 .bestsellers__item--aerotrack {
   position: relative;
   flex: 1;
   overflow: hidden;
-  border-radius: 0; /* Remove rounded corners */
-  background-color: white; /* Add background color */
+  border-radius: 10px;
+  background-color: #f2f2f2; /* Add a background similar to your provided example */
 }
 
+/* Text styles */
+/* BESTSELLER text */
+.bestsellers__item-type {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgb(255, 123, 22);
+  margin: 20px;
+}
+
+/* KeyGo X1 Title */
+.bestsellers__item-title {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 46px;
+  color: rgb(39, 39, 39);
+  margin: 10px 20px;
+}
+
+/* Wireless headphones Description */
+.bestsellers__item-description {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgb(106, 106, 106);
+  margin: 5px 20px;
+}
+
+/* Image Styling */
 .bestsellers__item-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 0; /* Remove image rounding */
+  border-radius: 10px;
 }
 
-/* Adjust bestseller type to be more like the second image */
-.bestsellers__item-type {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 14px; /* Slightly smaller */
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: normal; /* Remove letter-spacing */
-  background-color: transparent; /* No background color */
-  padding: 0; /* Remove padding */
-  color: #FF6600; /* Match orange color from second image */
-}
-
-/* Title adjustments to match second image */
-.bestsellers__item-title {
-  position: absolute;
-  top: 50px;
-  left: 15px;
-  font-size: 22px; /* Slightly smaller font */
-  font-weight: normal; /* Less bold */
-  color: black; /* Change to black */
-}
-
-/* Description adjustments */
-.bestsellers__item-description {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  font-size: 16px; /* Slightly smaller */
-  color: black; /* Change to black */
-}
-
-/* For responsive design */
+/* For responsiveness */
 @media (max-width: 768px) {
   .bestsellers__container {
-      flex-direction: column;
-      gap: 10px;
-  }
-
-  .bestsellers__item-type, 
-  .bestsellers__item-title, 
-  .bestsellers__item-description {
-      left: 10px;
-      right: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
