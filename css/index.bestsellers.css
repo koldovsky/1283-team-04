@@ -3,7 +3,7 @@
   background-color: #f5f5f5; /* Background color for the section */
 }
 
-.bestsellers_container {
+.bestsellers__container {
   display: flex;
   gap: 20px;
   justify-content: center;
