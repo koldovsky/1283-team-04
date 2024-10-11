@@ -1,75 +1,77 @@
 .bestsellers {
-  padding: 20px;
-  background-color: #f5f5f5; /* Background color for the section */
+  width: 100%;
+  padding: 20px 0;
 }
 
 .bestsellers__container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
 }
 
-.bestsellers__item {
+.bestsellers__item--keygo, 
+.bestsellers__item--quantum, 
+.bestsellers__item--aerotrack {
   position: relative;
-  background-color: #ffffff;
-  border-radius: 15px;
-  width: 300px; /* Adjust width as per your layout */
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex: 1;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
-.bestsellers__item:hover {
-  transform: scale(1.05); /* Hover effect */
-}
-
-.bestsellers__item-type {
-  color: #ff6600; /* Orange for "Bestseller" text */
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.bestsellers__item-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.bestsellers__item-description {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
+  border-radius: 10px; /* Додає округлені краї */
 }
 
 .bestsellers__item-image {
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
   object-fit: cover;
-  max-height: 150px;
+  border-radius: 10px; /* Впливає на зображення також */
 }
 
-/* Backstage image or background image */
-.bestsellers__item {
-  background-size: cover; 
-  background-position: center;
+.bestsellers__item-type, 
+.bestsellers__item-title, 
+.bestsellers__item-description {
+  position: absolute;
+  color: white;
+  z-index: 10;
+  margin: 0;
 }
 
-.bestsellers__item--keygo {
-  background-image: url('./images/keygox1.webp'); /* Add the background image for KeyGo X1 */
+.bestsellers__item-type {
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.6); /* Підкладка для тексту */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.bestsellers__item--quantum {
-  background-image: url('./images/quantumx1.webp'); /* Add the background image for QuantumX1 */
+.bestsellers__item-title {
+  top: 50px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.bestsellers__item--aerotrack {
-  background-image: url('./images/aerotrack300.webp'); /* Add the background image for AeroTrack 300 */
+.bestsellers__item-description {
+  bottom: 20px;
+  left: 20px;
+  font-size: 18px;
 }
+
+/* Для адаптивного дизайну */
+@media (max-width: 768px) {
+  .bestsellers__container {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .bestsellers__item-type, 
+  .bestsellers__item-title, 
+  .bestsellers__item-description {
+      left: 10px;
+      right: 10px;
+  }
+}
+
