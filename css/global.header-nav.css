@@ -7,7 +7,7 @@
     display: none;
     background-color: var(--secondary-bar-background-color);
     max-width: 100%;
-    padding: 0 24px;
+    padding: 5px 24px;
 
     @media (min-width: 992px) {
       display: flex;
@@ -34,6 +34,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 14px;
+            font-weight: 700;
           }
 
           .header__top-link:hover {
@@ -47,10 +48,10 @@
   /* Header Main Bar */
   .header__main-bar-wrapper {
     width: 100%;
-    padding: 0 24px;
 
     .header__main-bar {
       display: flex;
+      width: 95%;
       justify-content: space-between;
       align-items: center;
       padding-top: 20px;
@@ -146,7 +147,7 @@
       justify-content: space-between;
       align-items: center;
       width: 95%;
-      padding: 20px;
+      padding: 20px 0;
       background-color: var(--primary-bar-background-color);
 
       .header__mobile-logo {
@@ -226,8 +227,8 @@
       display: inline-block;
 
       .header__social-icon {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 25px;
         filter: brightness(0) saturate(100%) invert(100%);
       }
     }
