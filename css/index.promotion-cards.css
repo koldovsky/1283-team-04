@@ -1,0 +1,26 @@
+.promotion-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promotion-cards__item {
+    flex: 1 1 300px;
+    border-radius: 10px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.promotion-cards__item--wireless {
+    background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png')
+}
+
+.promotion-cards__item--keygo {
+    background-image: url('/./images/promotion-cards/headphones-promotion-card.png.png'); /* Шлях до зображення */
+}
+
+.promotion-cards__item--novascreen {
+    background-image: url('/./images/promotion-cards/monitor-promotion-card.png'); /* Шлях до зображення */
+}
