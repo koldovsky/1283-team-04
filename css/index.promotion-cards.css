@@ -1,29 +1,67 @@
 .promotion-cards {
     display: flex;
-    flex-wrap: wrap; /* Дозволяє елементам переходити на новий ряд, якщо не вистачає місця */
+    flex-wrap: wrap;
     justify-content: space-between; /* Вирівнює елементи з проміжками між ними */
+    padding: 30px 0px 60px;
 }
 
 .promotion-cards__item {
-    height: 375.4px; /* Фіксована висота для всіх карток */
+    height: 375.4px;
+    position: relative;
+    padding: 0px 15px;
+}
+
+.promotion-cards__item h2{
+    font-size: 36px;
+    color: var(--primary-text-color);
+}
+
+.promotion-cards__item span{
+    font-size: 17px;
+    color:var(--text-color)
+}
+
+.promotion-cards__price{
+    font-size: 26px;
+}
+
+.promotion-cards__item--keygo .promotion-cards__price-value{
+    font-size: 36px;
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
+.promotion-cards__price-old{
+    font-size: 21px;
+}
+
+.promotion-cards__card-content{
+    height: 100%;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
+.promotion-cards__item--wireless{
+    flex: 0 1 28%;
+}
 
-.promotion-cards__item--wireless {
+.promotion-cards__item--keygo{
+    flex: 0 1 36%;
+}
+
+.promotion-cards__item--novascreen{
+    flex: 0 1 36%;
+}
+.promotion-cards__item--wireless .promotion-cards__card-content {
     background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
-    flex: 0 1 30%; /* Ширина 30% */
+
 }
 
-.promotion-cards__item--keygo {
-    background-image: url('/images/promotion-cards/headphones-promotion-card.png.png'); 
-    flex: 0 1 35%;
-    background-position: right;
+.promotion-cards__item--keygo .promotion-cards__card-content {
+    background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
 }
 
-.promotion-cards__item--novascreen {
+.promotion-cards__item--novascreen .promotion-cards__card-content {
     background-image: url('/images/promotion-cards/monitor-promotion-card.png');
-    flex: 0 1 35%; /* Ширина 35% */
 }
