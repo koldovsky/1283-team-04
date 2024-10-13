@@ -23,14 +23,21 @@ footer {
 .footer__reward-wrapper p {
   margin: 0;
   line-height: 30px;
-  width: 30%;
+  width: 100%;
+  padding-bottom: 54px;
 
   @media (min-width: 992) {
-    width: 100%;
+    width: 33%;
   }
+}
+.footer__reward-wrapper p:last-child {
+  padding-bottom: 0;
 }
 .footer__reward-wrapper p span {
   color: var(--brand-color);
+}
+.footer__reward-desc {
+  font-size: 19px;
 }
 .footer__reward-question {
   font-size: 22px;
@@ -94,10 +101,12 @@ footer {
 .footer__top-services-service-item {
   width: 100%;
   text-align: center;
+  margin-top: 60px;
 
   @media (min-width: 768px) {
     width: 25%;
     text-align: left;
+    margin-top: 0;
   }
 }
 .footer__top-services-service-item img {
@@ -200,6 +209,15 @@ footer {
 }
 .footer__bottom-socials a img:hover {
   opacity: 1;
+}
+.footer__bottom-navigation,
+.footer__bottom-products,
+.footer__bottom-subscribe {
+  margin-top: 50px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 .footer__bottom-subscribe {
   width: 100%;
