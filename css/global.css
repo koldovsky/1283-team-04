@@ -23,9 +23,11 @@
   --brand-color: #ff7b16;
   --primary-site-background-color: #fff;
   --primary-text-color: #272727;
+  --text-color-light: #fff;
   --primary-subtitle-color: #555;
   --border-delimiter-color: #e0e0e0;
   --menu-text-color: rgb(255 255 255 / 76%);
+  --description-text-color: rgba(255, 255, 255, 0.8);
   --primary-bar-background-color: #272727;
   --secondary-bar-background-color: #1c4c97;
   --primary-button-color: #1c4c97;
@@ -34,6 +36,12 @@
   --content-container-size: 1200px;
   --content-gutter: 24px;
   --burger-line-size: 2px;
+  --hero-title-size-mobile: 60px;
+  --hero-title-size-tablet: 84px;
+  --hero-title-size: 109px;
+  --subtitle-size-mobile: 19px;
+  --caption-size-mobile: 14px;
+  --static-icon-color: #6a6a6a;
 }
 
 body {
