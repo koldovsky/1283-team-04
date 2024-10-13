@@ -1,0 +1,12 @@
+.news {
+  background: var(--secondary-section-bg-color);
+}
+.news__wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 120px 20px;
+  }
+.news__list{
+    display: flex;
+    justify-content: space-between;
+}
