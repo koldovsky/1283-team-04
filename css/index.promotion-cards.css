@@ -1,26 +1,29 @@
-.promotion-cards{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.promotion-cards {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє елементам переходити на новий ряд, якщо не вистачає місця */
+    justify-content: space-between; /* Вирівнює елементи з проміжками між ними */
 }
 
 .promotion-cards__item {
-    flex: 1 1 300px;
+    height: 375.4px; /* Фіксована висота для всіх карток */
     border-radius: 10px;
-    padding: 20px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .promotion-cards__item--wireless {
-    background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png')
+    background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
+    flex: 0 1 30%; /* Ширина 30% */
 }
 
 .promotion-cards__item--keygo {
-    background-image: url('/./images/promotion-cards/headphones-promotion-card.png.png'); /* Шлях до зображення */
+    background-image: url('/images/promotion-cards/headphones-promotion-card.png.png'); 
+    flex: 0 1 35%;
+    background-position: right;
 }
 
 .promotion-cards__item--novascreen {
-    background-image: url('/./images/promotion-cards/monitor-promotion-card.png'); /* Шлях до зображення */
+    background-image: url('/images/promotion-cards/monitor-promotion-card.png');
+    flex: 0 1 35%; /* Ширина 35% */
 }
