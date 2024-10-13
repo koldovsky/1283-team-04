@@ -16,12 +16,18 @@ footer {
   justify-content: space-between;
   flex-direction: column;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 }
 .footer__reward-wrapper p {
   margin: 0;
+  line-height: 30px;
+  width: 30%;
+
+  @media (min-width: 992) {
+    width: 100%;
+  }
 }
 .footer__reward-wrapper p span {
   color: var(--brand-color);
@@ -47,7 +53,7 @@ footer {
   padding-bottom: 60px;
   border-bottom: 1px solid var(--border-color);
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 }
@@ -55,7 +61,7 @@ footer {
   width: 100%;
   text-align: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     width: 50%;
     text-align: left;
   }
@@ -81,7 +87,7 @@ footer {
   justify-content: space-between;
   flex-direction: column;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 }
@@ -89,7 +95,7 @@ footer {
   width: 100%;
   text-align: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     width: 25%;
     text-align: left;
   }
@@ -103,7 +109,7 @@ footer {
   font-size: 14px;
   margin-top: 20px;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     text-align: left;
   }
 }
@@ -115,7 +121,7 @@ footer {
   flex-direction: column;
   text-align: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     flex-direction: row;
     text-align: left;
   }
@@ -139,8 +145,8 @@ footer {
   right: 0;
   margin: auto;
 }
-@media (min-width: 800px) {
-  .footer__bottom h3::after{
+@media (min-width: 768px) {
+  .footer__bottom h3::after {
     left: 0;
     margin: 0;
   }
@@ -164,7 +170,7 @@ footer {
   width: 100%;
   text-align: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     width: 23%;
     text-align: left;
   }
@@ -173,7 +179,7 @@ footer {
   width: 55px;
   margin: auto;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     margin: 0;
   }
 }
@@ -198,7 +204,7 @@ footer {
 .footer__bottom-subscribe {
   width: 100%;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     width: 25%;
   }
 }
@@ -246,7 +252,7 @@ footer {
   padding: 15px 0;
   text-align: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     flex-direction: row;
     text-align: left;
   }
