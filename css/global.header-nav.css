@@ -31,7 +31,7 @@
           padding: 0;
 
           .header__top-link {
-            color: #fff;
+            color: var(--text-color-light);
             text-decoration: none;
             font-size: 14px;
             font-weight: 700;
@@ -62,7 +62,7 @@
       }
 
       .header__contact {
-        color: #fff;
+        color: var(--text-color-light);
         font-size: 16px;
         display: none;
 
@@ -82,7 +82,7 @@
           padding: 0;
 
           .header__nav-link {
-            color: #fff;
+            color: var(--text-color-light);
             text-decoration: underline;
             font-size: 16px;
           }
@@ -105,12 +105,12 @@
         cursor: pointer;
         background: none;
         border: none;
-        color: #fff;
+        color: var(--text-color-light);
 
         .header__burger-line {
           width: 25px;
           height: var(--burger-line-size);
-          background-color: #fff;
+          background-color: var(--text-color-light);
           margin: 4px 0;
         }
 
@@ -182,7 +182,7 @@
       }
 
       .header__mobile-menu-link {
-        color: #fff;
+        color: var(--text-color-light);
         font-size: 1.2rem;
         transition: color 0.3s ease;
       }
@@ -200,7 +200,7 @@
     }
 
     .header__mobile-contact {
-      color: #fff;
+      color: var(--text-color-light);
       font-size: 1rem;
       text-align: center;
       margin-top: 20px;
