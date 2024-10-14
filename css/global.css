@@ -43,6 +43,7 @@
   --caption-size-mobile: 14px;
   --static-icon-color: #6a6a6a;
   --secondary-section-bg-color: #f8f3ef;
+  --text-description-color: rgb(106, 106, 106);
 }
 
 body {
