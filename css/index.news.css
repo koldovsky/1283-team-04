@@ -11,8 +11,13 @@
 .news__list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   gap: 2%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 
   @media (min-width: 992px) {
     flex-wrap: nowrap;
@@ -55,12 +60,16 @@
 .news__subtitle {
   margin-top: 10px;
   line-height: 76px;
-}
-
-.news__subtitle {
   text-align: center;
-  font-size: 64px;
+  font-size: 40px;
   font-family: "Bebas Neue", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+  }
+  @media (min-width: 992px) {
+    font-size: 64px;
+  }
 }
 
 .news__subtitle span {

@@ -22,8 +22,15 @@
 
 .testimonials__subtitle {
   text-align: center;
-  font-size: 64px;
+  font-size: 40px;
   font-family: "Bebas Neue", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+  }
+  @media (min-width: 992px) {
+    font-size: 64px;
+  }
 }
 
 .testimonials__subtitle span {

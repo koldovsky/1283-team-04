@@ -78,9 +78,16 @@ footer {
   color: var(--secondary-color);
   margin: 0;
   padding: 0;
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 400;
   font-family: "Bebas Neue", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+  }
+  @media (min-width: 992px) {
+    font-size: 64px;
+  }
 }
 .footer__top-text p {
   font-size: 20px;
