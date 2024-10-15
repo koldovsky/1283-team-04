@@ -60,7 +60,7 @@
   font-weight: 300;
 }
 .news__list__item-readmore {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .news__list__item-readmore a {
   background-color: var(--brand-color);
@@ -70,4 +70,10 @@
   border-radius: 8px;
   font-size: 14px;
   display: inline-block;
+}
+.news__list__item-readmore a:hover{
+  color: var(--btn-primary-alt-hover-color);
+  box-shadow: 0 0 0 0;
+  background-color: var(--btn-primary-alt-hover-bg-color);
+  transition: background-color 0.3s ease;
 }

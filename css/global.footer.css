@@ -26,8 +26,9 @@ footer {
   width: 100%;
   padding-bottom: 54px;
 
-  @media (min-width: 992) {
+  @media (min-width: 992px) {
     width: 33%;
+    padding-bottom: 0;
   }
 }
 .footer__reward-wrapper p:last-child {
@@ -255,6 +256,7 @@ footer {
   color: var(--primary-background-color);
   padding: 10px;
   border: 1px solid var(--secondary-color);
+  transition: background-color 0.3s ease;
 }
 .footer__bottom-socials img {
   background: var(--secondary-background-color);
