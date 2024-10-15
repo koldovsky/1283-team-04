@@ -1,5 +1,3 @@
-@import url(global.css);
-
 /* Block: bestsellers */
 .bestsellers {
   position: static;
@@ -11,7 +9,7 @@
 .bestsellers__container {
   display: flex;
   justify-content: space-evenly;
-  max-width: 1200px;
+  max-width: 100%;
   gap: 2%;
   /* Space between each article */
   padding-left: 15px;
