@@ -31,7 +31,7 @@
 .bestsellers__image--keygo {
   background-image: url(../images/keygox1.webp);
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   background-position: center center;
   border-radius: 10px;
 }
@@ -39,7 +39,7 @@
 .bestsellers__image--quantum {
   background-image: url(../images/quantumx1.webp);
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   background-position: center center;
   border-radius: 10px;
 }
@@ -47,7 +47,7 @@
 .bestsellers__image--aerotrack {
   background-image: url(../images/aerotrack300.webp);
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   background-position: center center;
   border-radius: 10px;
 }
