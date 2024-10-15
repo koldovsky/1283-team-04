@@ -32,7 +32,7 @@
   width: 100%;
 }
 
-.bestsellers__item--keygo {
+.bestsellers__items .bestsellers__item--keygo {
   background-image: url(../images/keygox1.webp);
 
   .bestsellers__item-label {
@@ -49,7 +49,24 @@
 
 }
 
-.bestsellers__item--quantum {
+.bestsellers__items .bestsellers__item--quantum{
+  background-image: url(../images/quantumx1.webp);
+
+  .bestsellers__item-label{
+    color:f8f3ef;
+  }
+
+  .bestsellers__item-text{
+    color: #fff;
+  }
+  
+  .bestsellers__item-description{
+    color: rgba(255,255,255,0.83)
+  }
+
+}
+
+.bestsellers__items .bestsellers__item--quantum {
   background-image: url(../images/quantumx1.webp);
 
   .bestsellers__item-label {
