@@ -30,24 +30,24 @@
 /* KeyGo X1 Item */
 .bestsellers__image--keygo {
   background-image: url(../images/keygox1.webp);
-  width: 100%;
-  min-height: 650px;
+  object-fit: cover;
+  max-width: 100%;
   background-position: center center;
   border-radius: 10px;
 }
 
 .bestsellers__image--quantum {
   background-image: url(../images/quantumx1.webp);
-  width: 100%;
-  min-height: 650px;
+  object-fit: cover;
+  max-width: 100%;
   background-position: center center;
   border-radius: 10px;
 }
 
 .bestsellers__image--aerotrack {
   background-image: url(../images/aerotrack300.webp);
-  width: 100%;
-  min-height: 650px;
+  object-fit: cover;
+  max-width: 100%;
   background-position: center center;
   border-radius: 10px;
 }
