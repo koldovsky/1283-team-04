@@ -1,6 +1,5 @@
 /* Block: bestsellers */
 .bestsellers {
-  position: static;
   background: #fff;
   padding-top: 30px;
   padding-bottom: 60px;
@@ -9,100 +8,81 @@
 .bestsellers__container {
   display: flex;
   justify-content: space-evenly;
+  gap: 2%; /* Space between articles */
   max-width: 100%;
-  gap: 2%;
-  /* Space between each article */
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
 }
 
-/* Element: bestsellers__item with background image */
+/* Bestsellers Items */
 .bestsellers__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Shadow effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
 }
 
-.bestsellers__items .bestsellers__item--keygo {
+/* KeyGo X1 Item */
+.bestsellers__item--keygo {
   background-image: url(../images/keygox1.webp);
-
-  .bestsellers__item-label {
-    color: #ff7b16;
-  }
-
-  .bestsellers__item-text {
-    color: #272727;
-  }
-
-  .bestsellers__item-description {
-    color: rgb(106, 106, 106);
-  }
-
 }
 
-.bestsellers__items .bestsellers__item--quantum{
+.bestsellers__item--keygo .bestsellers__item-label {
+  color: #ff7b16;
+}
+
+.bestsellers__item--keygo .bestsellers__item-text {
+  color: #272727;
+}
+
+.bestsellers__item--keygo .bestsellers__item-description {
+  color: rgb(106, 106, 106);
+}
+
+/* QuantumX1 Item */
+.bestsellers__item--quantum {
   background-image: url(../images/quantumx1.webp);
-
-  .bestsellers__item-label{
-    color:f8f3ef;
-  }
-
-  .bestsellers__item-text{
-    color: #fff;
-  }
-  
-  .bestsellers__item-description{
-    color: rgba(255,255,255,0.83)
-  }
-
 }
 
-.bestsellers__items .bestsellers__item--quantum {
-  background-image: url(../images/quantumx1.webp);
-
-  .bestsellers__item-label {
-    color: f8f3ef;
-  }
-
-  .bestsellers__item-text {
-    color: #fff;
-  }
-
-  .bestsellers__item-description {
-    color: rgba(255, 255, 255, 0.83)
-  }
-
+.bestsellers__item--quantum .bestsellers__item-label {
+  color: #f8f3ef;
 }
 
+.bestsellers__item--quantum .bestsellers__item-text {
+  color: #fff;
+}
+
+.bestsellers__item--quantum .bestsellers__item-description {
+  color: rgba(255, 255, 255, 0.83);
+}
+
+/* AeroTrack Item */
 .bestsellers__item--aerotrack {
   background-image: url(../images/aerotrack300.webp);
-
-  .bestsellers__item-label {
-    color: #ff7b16;
-  }
-
-  .bestsellers__item-text {
-    color: #fff;
-  }
-
-  .bestsellers__item-description {
-    color: #fff;
-  }
-
 }
 
+.bestsellers__item--aerotrack .bestsellers__item-label {
+  color: #ff7b16;
+}
+
+.bestsellers__item--aerotrack .bestsellers__item-text {
+  color: #fff;
+}
+
+.bestsellers__item--aerotrack .bestsellers__item-description {
+  color: #fff;
+}
+
+/* Image styling */
 .bestsellers__item-image {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  /* Зображення охоплює весь контейнер */
+  object-fit: cover; /* The image covers the container */
   flex-grow: 1;
 }
 
@@ -110,8 +90,7 @@
 .bestsellers__item-text {
   padding: 80px 40px;
   position: relative;
-  z-index: 1;
-  /* Щоб текст був над зображенням */
+  z-index: 1; /* To ensure text is above the image */
   box-sizing: border-box;
 }
 
@@ -136,7 +115,7 @@
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
-  .bestsellers {
+  .bestsellers__container {
     flex-direction: column;
     align-items: center;
   }
