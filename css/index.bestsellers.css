@@ -10,12 +10,13 @@
 
 .bestsellers__container {
   display: flex;
-  justify-content: space-between;
-  max-width: 10%;
-  gap: 20px;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  gap: 2%;
   /* Space between each article */
   padding-left: 15px;
   padding-right: 15px;
+  margin: auto;
 }
 
 /* Element: bestsellers__item with background image */
@@ -28,6 +29,7 @@
   /* Shadow effect */
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
 }
 
 .bestsellers__item--keygo {
