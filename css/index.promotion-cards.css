@@ -1,0 +1,81 @@
+.promotion-cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    overflow-x: hidden;
+}
+
+.promotion-cards__item {
+    flex-grow: 1;
+    flex-basis: auto;
+    position: relative;
+    margin: 30px 0px;
+    pading: 0px 15px;
+    flex-direction: column;
+}
+
+.promotion-cards__item--wireless {
+    min-height: 352.75px;
+}
+
+.promotion-cards__item--keygo {
+    min-height: 372.4px;
+}
+
+.promotion-cards__item--novascreen {
+    min-height: 455.6px;
+}
+
+.promotion-cards__card-content {
+    min-width: 272px;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.promotion-cards__item h2 {
+    font-size: 36px;
+    color: var(--primary-text-color);
+}
+
+.promotion-cards__item span {
+    font-size: 17px;
+    color: var(--text-color)
+}
+
+.promotion-cards__price {
+    font-size: 26px;
+}
+
+.promotion-cards__item--keygo .promotion-cards__price-value {
+    font-size: 36px;
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
+.promotion-cards__price-old {
+    font-size: 21px;
+}
+
+
+/* @media (min-width: 300px) {
+    .promotion-cards__card-content {}
+} */
+
+
+.promotion-cards__item--wireless .promotion-cards__card-content {
+    background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
+
+}
+
+.promotion-cards__item--keygo .promotion-cards__card-content {
+    background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
+}
+
+.promotion-cards__item--novascreen .promotion-cards__card-content {
+    background-image: url('/images/promotion-cards/monitor-promotion-card.png');
+}

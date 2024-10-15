@@ -1,0 +1,82 @@
+.promo-offers {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+  }
+  
+  .promo-offers h2 {
+    font-size: 27px;
+  }
+  
+  .promo-shipping__button,
+  .promo-product-offer__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7b16;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  
+  .promo-shipping__button:hover {
+    background-color: #272727;
+  }
+  
+  .promo-product-offer__button:hover {
+    background-color: #fff;
+    color: #323232;
+  }
+  
+  .promo-shipping__article,
+  .promo-product-offer__aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+  
+  .promo-shipping__article {
+    padding-left: 22px;
+    padding-right: 29px;
+  }
+  
+  .promo-product-offer__aside {
+    padding-right: 22px;
+    width: 48%;
+  }
+  
+  .promo-offers__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .promo-shipping__article,
+  .promo-product-offer__aside {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .promo-product-offer__old-price {
+    text-decoration: line-through;
+    font-size: 13px;
+  }
+  
+  .promo-product-offer__new-price {
+    font-size: 17.5px;
+    color: #3b82f6;
+  }
+  
+  .promo-product-offer__promo-info {
+    font-size: 11.5px;
+  }
+  
+  .promo-shipping__description {
+    font-size: 14px;
+  }
+  
+  .promo-shipping__features {
+    font-size: 11.5px;
+  }
+  
