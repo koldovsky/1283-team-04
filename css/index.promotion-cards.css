@@ -2,18 +2,18 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px 20px;
+    padding: 30px 9px 60px 9px;
+    padding-left: 3vw;
+    padding-right: 3vw;
     overflow-x: hidden;
 }
 
 .promotion-cards__item {
     flex-grow: 1;
-    flex-basis: auto;
+    flex-basis: 100%;
     position: relative;
-    margin: 30px 0px;
-    pading: 0px 15px;
-    flex-direction: column;
+    padding: 0px 15px;
+    margin-bottom: 25px;
 }
 
 .promotion-cards__item--wireless {
@@ -28,54 +28,89 @@
     min-height: 455.6px;
 }
 
-.promotion-cards__card-content {
-    min-width: 272px;
-    height: 100%;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+@media (min-width: 519px) {
+    .promotion-cards__item:first-child {
+        flex-basis: 100%;
+    }
+
+    .promotion-cards__item:nth-child(2),
+    .promotion-cards__item:nth-child(3) {
+        flex-basis: 48%;
+    }
 }
 
-.promotion-cards__item h2 {
-    font-size: 36px;
-    color: var(--primary-text-color);
-}
+@media (min-width: 1000px) {
+    .promotion-cards {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
 
-.promotion-cards__item span {
-    font-size: 17px;
-    color: var(--text-color)
-}
+    .promotion-cards__item:first-child {
+        flex-basis: 30%;
+        height: 375.4px;
+    }
 
-.promotion-cards__price {
-    font-size: 26px;
-}
+    .promotion-cards__item:nth-child(2) {
+        flex-basis: 35%;
+        height: 375.4px;
+    }
 
-.promotion-cards__item--keygo .promotion-cards__price-value {
-    font-size: 36px;
-    color: var(--brand-color);
-    font-weight: bold;
-}
-
-.promotion-cards__price-old {
-    font-size: 21px;
-}
+    .promotion-cards__item:nth-child(3) {
+        flex-basis: 35%;
+        height: 375.4px;
+        } /*need to check*/
+    }
 
 
-/* @media (min-width: 300px) {
-    .promotion-cards__card-content {}
-} */
+
+    .promotion-cards__card-content {
+        min-width: 272px;
+        height: 100%;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .promotion-cards__item h2 {
+        font-size: 36px;
+        color: var(--primary-text-color);
+    }
+
+    .promotion-cards__item span {
+        font-size: 17px;
+        color: var(--text-color)
+    }
+
+    .promotion-cards__price {
+        font-size: 26px;
+    }
+
+    .promotion-cards__item--keygo .promotion-cards__price-value {
+        font-size: 36px;
+        color: var(--brand-color);
+        font-weight: bold;
+    }
+
+    .promotion-cards__price-old {
+        font-size: 21px;
+    }
 
 
-.promotion-cards__item--wireless .promotion-cards__card-content {
-    background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
 
-}
 
-.promotion-cards__item--keygo .promotion-cards__card-content {
-    background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
-}
 
-.promotion-cards__item--novascreen .promotion-cards__card-content {
-    background-image: url('/images/promotion-cards/monitor-promotion-card.png');
-}
+    .promotion-cards__item--wireless .promotion-cards__card-content {
+        background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
+
+    }
+
+    .promotion-cards__item--keygo .promotion-cards__card-content {
+        background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
+    }
+
+    .promotion-cards__item--novascreen .promotion-cards__card-content {
+        background-image: url('/images/promotion-cards/monitor-promotion-card.png');
+    }
