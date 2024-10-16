@@ -9,11 +9,14 @@
 }
 
 .promotion-cards__item {
+    height: 100%;
     flex-grow: 1;
     flex-basis: 100%;
     position: relative;
     padding: 0px 15px;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .promotion-cards__item--wireless {
@@ -33,9 +36,11 @@
         flex-basis: 100%;
     }
 
-    .promotion-cards__item:nth-child(2),
+    .promotion-cards__item:nth-child(2){
+        flex-basis: 50%;
+    }
     .promotion-cards__item:nth-child(3) {
-        flex-basis: 48%;
+        flex-basis: 50%;
     }
 }
 
@@ -58,20 +63,26 @@
     .promotion-cards__item:nth-child(3) {
         flex-basis: 35%;
         height: 375.4px;
-        } /*need to check*/
+        min-height: auto;
     }
-
-
-
+}
     .promotion-cards__card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 0 70%;
         min-width: 272px;
         height: 100%;
         border-radius: 10px;
         background-size: cover;
-        background-position: center;
         position: relative;
         flex-direction: column;
-        justify-content: space-between;
+        flex: 1;
+        text-align: center;
+    }
+
+    .promotion-cards__placeholder {
+        flex: 0 0 30%;
     }
 
     .promotion-cards__item h2 {
@@ -98,19 +109,48 @@
         font-size: 21px;
     }
 
-
-
-
-
     .promotion-cards__item--wireless .promotion-cards__card-content {
         background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
+        background-position: 50% 0%;
 
     }
 
     .promotion-cards__item--keygo .promotion-cards__card-content {
         background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
+        background-position: 89% 0%;
     }
 
     .promotion-cards__item--novascreen .promotion-cards__card-content {
         background-image: url('/images/promotion-cards/monitor-promotion-card.png');
+        background-position: 65% 0%;
     }
+
+    .promotion-cards__countdown{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .promotion-cards__countdown-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        outline: solid black 1px;
+        aspect-ratio: 1;
+        width: 15%; /* Встановлюємо ширину кожного блоку, щоб разом вони займали ~92% контейнера */
+        padding-bottom: 1%;
+        outline: 1px solid black; /* Обведення для видимості квадратів */
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .promotion-cards__countdown-number{
+        font-size: 36px;
+    }
+    .promotion-cards__countdown-label{
+        font-size: 17px;
+    }
+
+    
