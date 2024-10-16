@@ -1,6 +1,6 @@
 /* Block: bestsellers */
 .bestsellers {
-  background: #fff;
+  background: var(--primary-site-background-color);
   padding-top: 30px;
   padding-bottom: 60px;
 }
@@ -21,7 +21,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
@@ -36,15 +35,15 @@
 }
 
 .bestsellers__item--keygo .bestsellers__item-label {
-  color: #ff7b16;
+  color: var(--brand-color);
 }
 
 .bestsellers__item--keygo .bestsellers__item-text {
-  color: #272727;
+  color: var(--primary-background-color);
 }
 
 .bestsellers__item--keygo .bestsellers__item-description {
-  color: rgb(106, 106, 106);
+  color: var(--text-description-color);
 }
 
 /* QuantumX1 Item */
@@ -57,15 +56,15 @@
 }
 
 .bestsellers__item--quantum .bestsellers__item-label {
-  color: #f8f3ef;
+  color: var(--secondary-section-bg-color);
 }
 
 .bestsellers__item--quantum .bestsellers__item-text {
-  color: #fff;
+  color: var(--text-color-light);
 }
 
 .bestsellers__item--quantum .bestsellers__item-description {
-  color: rgba(255, 255, 255, 0.83);
+  color: var(--description-text-color);
 }
 
 /* AeroTrack Item */
@@ -78,15 +77,15 @@
 }
 
 .bestsellers__item--aerotrack .bestsellers__item-label {
-  color: #ff7b16;
+  color: var(--brand-color);
 }
 
 .bestsellers__item--aerotrack .bestsellers__item-text {
-  color: #fff;
+  color: var(--text-color-light);
 }
 
 .bestsellers__item--aerotrack .bestsellers__item-description {
-  color: #fff;
+  color: var(--text-color-light);
 }
 
 /* Image styling */
