@@ -48,8 +48,10 @@
 /* QuantumX1 Item */
 .bestsellers__item--quantum {
   background-image: url(../images/quantumx1.webp);
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  background-position: center center;
+  border-radius: 10px;
 }
 
 .bestsellers__item--quantum .bestsellers__item-label {
@@ -67,8 +69,10 @@
 /* AeroTrack Item */
 .bestsellers__item--aerotrack {
   background-image: url(../images/aerotrack300.webp);
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* The image covers the container */
+  flex-grow: 1;
 }
 
 .bestsellers__item--aerotrack .bestsellers__item-label {
