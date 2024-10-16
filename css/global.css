@@ -44,6 +44,9 @@
   --static-icon-color: #6a6a6a;
   --secondary-section-bg-color: #f8f3ef;
   --text-description-color: rgb(106, 106, 106);
+  --hot-badge-sale-background-color: #464C5C;
+  --hot--badge-out-of-stock-background-color: #ffddd9;
+  --hot--badge-out-of-stock-text-color: #cc3833;
 }
 
 body {

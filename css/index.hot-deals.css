@@ -1,0 +1,157 @@
+.promo {
+  background-color: var(--secondary-color);
+}
+
+.promo__wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.promo__title {
+  font-size: 12px;
+  color: var(--brand-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__subtitle {
+  margin-top: 10px;
+  line-height: 40px;
+  text-align: center;
+  font-size: clamp(40px, 2vw, 64px);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.highlight {
+  color: var(--secondary-background-color);
+}
+.promo__description {
+  text-align: center;
+  font-size: 19px;
+  margin-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--text-text-description-color);
+  margin-bottom: 15px;
+}
+.hot__products-container {
+  margin-top: 50px;
+}
+.hot__products-container {
+  margin-top: 50px;
+  position: relative;
+}
+.slider__arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.slider__arrow-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: scaleX(-1);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.slider__arrow-left {
+  left: 10px;
+}
+
+.slider__arrow-right {
+  right: 10px;
+}
+
+.slider__arrow-left svg,
+.slider__arrow-right svg {
+  width: 30px;
+  height: 30px;
+  transition: fill 0.3s ease;
+}
+
+.slider__arrow-left:hover svg,
+.slider__arrow-right:hover svg {
+  fill: var(--secondary-background-color);
+}
+
+.hot__product-item {
+  display: flex;
+  position: relative;
+  height: 100%;
+  max-width: 100% auto;
+  flex-direction: column;
+  align-items: stretch;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.hot__product-item a {
+  text-decoration: none;
+}
+
+.hot__badge-sale {
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  max-width: 196px;
+  margin: 4px;
+  padding: 4px 8px;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+  background: var(--hot-badge-sale-background-color);
+  color: var(--text-color-light);
+}
+
+.hot__product-img {
+  display: block;
+}
+
+.hot__product-name {
+  color: var(--primary-background-color);
+}
+
+.hot__product-price {
+  justify-content: flex-start;
+  margin-top: 16px;
+}
+
+.hot__price--old {
+  text-decoration: line-through;
+  font-size: clamp(18px, 2vw, 24px);
+}
+
+.hot__price--new {
+  display: flex;
+  margin-top: 16px;
+  column-gap: 16px;
+  row-gap: 8px;
+  font-size: clamp(20px, 2vw, 26px);
+  align-items: center;
+  color: var(--brand-color);
+}
+
+.hot__product-btn {
+  height: 40px;
+  width: 100px;
+  margin-top: 24px;
+  font-size: clamp(14px, 1vw, 20px);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  color: var(--text-color-light);
+  background-color: var(--primary-button-color);
+}
+
+.hot__product-btn:hover {
+  background-color: var(--primary-bar-background-color);
+}
