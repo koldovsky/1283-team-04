@@ -29,8 +29,10 @@
 
 .bestsellers__item--keygo {
   background-image: url(../images/keygox1.webp);
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  background-position: center center;
+  border-radius: 10px;
 }
 
 .bestsellers__item--keygo .bestsellers__item-label {
@@ -69,10 +71,10 @@
 /* AeroTrack Item */
 .bestsellers__item--aerotrack {
   background-image: url(../images/aerotrack300.webp);
+  object-fit: cover;
   width: 100%;
-  height: auto;
-  object-fit: cover; /* The image covers the container */
-  flex-grow: 1;
+  background-position: center center;
+  border-radius: 10px;
 }
 
 .bestsellers__item--aerotrack .bestsellers__item-label {
