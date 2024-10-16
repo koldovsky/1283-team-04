@@ -103,6 +103,8 @@
   font-weight: 300;
   margin-top: 20px;
   color: var(--text-color);
+  max-width:90%;
+  margin: auto;
 }
 
 .testimonials__slider-item-date {
