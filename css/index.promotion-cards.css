@@ -36,9 +36,10 @@
         flex-basis: 100%;
     }
 
-    .promotion-cards__item:nth-child(2){
+    .promotion-cards__item:nth-child(2) {
         flex-basis: 50%;
     }
+
     .promotion-cards__item:nth-child(3) {
         flex-basis: 50%;
     }
@@ -66,91 +67,93 @@
         min-height: auto;
     }
 }
-    .promotion-cards__card-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: 0 0 70%;
-        min-width: 272px;
-        height: 100%;
-        border-radius: 10px;
-        background-size: cover;
-        position: relative;
-        flex-direction: column;
-        flex: 1;
-        text-align: center;
-    }
 
-    .promotion-cards__placeholder {
-        flex: 0 0 30%;
-    }
+.promotion-cards__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 70%;
+    min-width: 272px;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
 
-    .promotion-cards__item h2 {
-        font-size: 36px;
-        color: var(--primary-text-color);
-    }
+.promotion-cards__placeholder {
+    flex: 0 0 30%;
+}
 
-    .promotion-cards__item span {
-        font-size: 17px;
-        color: var(--text-color)
-    }
+.promotion-cards__item h2 {
+    font-size: 36px;
+    color: var(--primary-text-color);
+}
 
-    .promotion-cards__price {
-        font-size: 26px;
-    }
+.promotion-cards__item span {
+    font-size: 17px;
+    color: var(--text-color)
+}
 
-    .promotion-cards__item--keygo .promotion-cards__price-value {
-        font-size: 36px;
-        color: var(--brand-color);
-        font-weight: bold;
-    }
+.promotion-cards__price {
+    font-size: 26px;
+}
 
-    .promotion-cards__price-old {
-        font-size: 21px;
-    }
+.promotion-cards__item--keygo .promotion-cards__price-value {
+    font-size: 36px;
+    color: var(--brand-color);
+    font-weight: bold;
+}
 
-    .promotion-cards__item--wireless .promotion-cards__card-content {
-        background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
-        background-position: 50% 0%;
+.promotion-cards__price-old {
+    font-size: 21px;
+}
 
-    }
+.promotion-cards__item--wireless .promotion-cards__card-content {
+    background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
+    background-position: 50% 0%;
 
-    .promotion-cards__item--keygo .promotion-cards__card-content {
-        background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
-        background-position: 89% 0%;
-    }
+}
 
-    .promotion-cards__item--novascreen .promotion-cards__card-content {
-        background-image: url('/images/promotion-cards/monitor-promotion-card.png');
-        background-position: 65% 0%;
-    }
+.promotion-cards__item--keygo .promotion-cards__card-content {
+    background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
+    background-position: 89% 0%;
+}
 
-    .promotion-cards__countdown{
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
+.promotion-cards__item--novascreen .promotion-cards__card-content {
+    background-image: url('/images/promotion-cards/monitor-promotion-card.png');
+    background-position: 65% 0%;
+}
+
+.promotion-cards__countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 
-    .promotion-cards__countdown-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        outline: solid black 1px;
-        aspect-ratio: 1;
-        width: 15%; /* Встановлюємо ширину кожного блоку, щоб разом вони займали ~92% контейнера */
-        padding-bottom: 1%;
-        outline: 1px solid black; /* Обведення для видимості квадратів */
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
+.promotion-cards__countdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    outline: solid black 1px;
+    aspect-ratio: 1;
+    width: 15%;
+    /* Встановлюємо ширину кожного блоку, щоб разом вони займали ~92% контейнера */
+    padding-bottom: 1%;
+    outline: 1px solid black;
+    /* Обведення для видимості квадратів */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
-    .promotion-cards__countdown-number{
-        font-size: 36px;
-    }
-    .promotion-cards__countdown-label{
-        font-size: 17px;
-    }
+.promotion-cards__countdown-number {
+    font-size: 36px;
+}
 
-    
+.promotion-cards__countdown-label {
+    font-size: 17px;
+}
