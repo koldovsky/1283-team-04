@@ -1,37 +1,55 @@
 /* Block: bestsellers */
 .bestsellers {
   background: #fff;
-  padding: 30px 0 60px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .bestsellers__container {
   display: flex;
   justify-content: space-evenly;
-  gap: 2%;
+  gap: 2%; /* Space between articles */
   max-width: 100%;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: auto;
 }
 
 /* Bestsellers Items */
-.bestsellers__item {
-  position: relative;
-  width: 30%;
-  height: 400px;
+.bestsellers__items {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
 }
 
 /* KeyGo X1 Item */
-.bestsellers__item--keygo {
-  background-image: url('../images/keygox1.webp');
+.bestsellers__image--keygo {
+  background-image: url(../images/keygox1.webp);
+  object-fit: cover;
+  width: 100%;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.bestsellers__image--quantum {
+  background-image: url(../images/quantumx1.webp);
+  object-fit: cover;
+  width: 100%;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.bestsellers__image--aerotrack {
+  background-image: url(../images/aerotrack300.webp);
+  object-fit: cover;
+  width: 100%;
+  background-position: center center;
+  border-radius: 10px;
 }
 
 .bestsellers__item--keygo .bestsellers__item-label {
@@ -48,7 +66,7 @@
 
 /* QuantumX1 Item */
 .bestsellers__item--quantum {
-  background-image: url('../images/quantumx1.webp');
+  background-image: url(../images/quantumx1.webp);
 }
 
 .bestsellers__item--quantum .bestsellers__item-label {
@@ -63,9 +81,9 @@
   color: rgba(255, 255, 255, 0.83);
 }
 
-/* AeroTrack 300 Item */
+/* AeroTrack Item */
 .bestsellers__item--aerotrack {
-  background-image: url('../images/aerotrack300.webp');
+  background-image: url(../images/aerotrack300.webp);
 }
 
 .bestsellers__item--aerotrack .bestsellers__item-label {
@@ -80,10 +98,19 @@
   color: #fff;
 }
 
+/* Image styling */
+.bestsellers__item-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* The image covers the container */
+  flex-grow: 1;
+}
+
 /* Text block styling */
 .bestsellers__item-text {
   padding: 80px 40px;
-  z-index: 1; /* Ensure text is above the background */
+  position: relative;
+  z-index: 1; /* To ensure text is above the image */
   box-sizing: border-box;
 }
 
@@ -114,8 +141,7 @@
   }
 
   .bestsellers__item {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
-
