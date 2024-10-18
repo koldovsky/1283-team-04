@@ -79,5 +79,21 @@
       data-hx-get="global.footer.partial.html"
     ></footer>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkEmbla = () => {
+          const emblaNode = document.querySelector(".embla__viewport");
+          if (emblaNode) {
+            const options = { align: 'start', loop: true};
+            const emblaApi = EmblaCarousel(emblaNode, options)
+            console.log(emblaApi.slideNodes());
+          } else {
+            setTimeout(checkEmbla, 100); // Перевіряйте кожні 100 мс
+          }
+        };
+        checkEmbla(); // Запускаємо перевірку
+      });
+    </script>
   </body>
 </html>
