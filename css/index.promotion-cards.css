@@ -1,7 +1,3 @@
-*{
-    outline: solid red 1px;
-}
-
 .promotion-cards {
     display: flex;
     flex-direction: column;
