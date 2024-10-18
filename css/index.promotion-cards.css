@@ -1,10 +1,83 @@
+*{
+    outline: solid red 1px;
+}
+
 .promotion-cards {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 24px;
+    padding: 30px 0px 60px;
+
+}
+
+.promotion-cards__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    padding: 0px 24px;
+    min-width: 272px;
+
+}
+
+@media (min-width: 480px) {
+    .promotion-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .promotion-cards__item--wireless {
+        flex-basis: 100%;
+    }
+
+    .promotion-cards__item--keygo {
+    
+        flex-basis: 50%;
+        min-width: auto;
+    }
+    
+    .promotion-cards__item--novascreen {
+        flex-basis: 50%;
+        min-width: auto;
+    }
+
+}
+
+.promotion-cards__item--wireless .promotion-cards__card-content {
+    background-image: url('../images/promotion-cards/wireless-mouse-promotion-card.png');
+    background-size: cover;
+    min-height: 352.75px;
+    background-position: 54% 0%;
+}
+
+.promotion-cards__item--keygo .promotion-cards__card-content {
+    background-image: url('../images/promotion-cards/headphones-promotion-card.png.png');
+    background-size: cover;
+    min-height: 372.4px;
+    background-position: 87% 0%;
+}
+
+.promotion-cards__item--novascreen .promotion-cards__card-content {
+    background-image: url('../images/promotion-cards/monitor-promotion-card.png');
+    background-size: cover;
+    min-height: 455.6px;
+    background-position: 50% 0%;
+}
+
+.promotion-cards__card-content{
+    border-radius: 10px;
+}
+
+
+
+
+/* .promotion-cards {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    padding: 30px 9px 60px 9px;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding: 0px 24px;
     overflow-x: hidden;
 }
 
@@ -13,10 +86,11 @@
     flex-grow: 1;
     flex-basis: 100%;
     position: relative;
-    padding: 0px 15px;
+    column-gap: 15px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
+    outline: solid red;
 }
 
 .promotion-cards__item--wireless {
@@ -112,18 +186,18 @@
 }
 
 .promotion-cards__item--wireless .promotion-cards__card-content {
-    background-image: url('/images/promotion-cards/wireless-mouse-promotion-card.png');
+    background-image: url('../images/promotion-cards/wireless-mouse-promotion-card.png');
     background-position: 50% 0%;
 
 }
 
 .promotion-cards__item--keygo .promotion-cards__card-content {
-    background-image: url('/images/promotion-cards/headphones-promotion-card.png.png');
+    background-image: url('../images/promotion-cards/headphones-promotion-card.png.png');
     background-position: 89% 0%;
 }
 
 .promotion-cards__item--novascreen .promotion-cards__card-content {
-    background-image: url('/images/promotion-cards/monitor-promotion-card.png');
+    background-image: url('../images/promotion-cards/monitor-promotion-card.png');
     background-position: 65% 0%;
 }
 
@@ -142,10 +216,8 @@
     outline: solid black 1px;
     aspect-ratio: 1;
     width: 15%;
-    /* Встановлюємо ширину кожного блоку, щоб разом вони займали ~92% контейнера */
     padding-bottom: 1%;
     outline: 1px solid black;
-    /* Обведення для видимості квадратів */
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -156,4 +228,4 @@
 
 .promotion-cards__countdown-label {
     font-size: 17px;
-}
+} */
