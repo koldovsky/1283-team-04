@@ -45,6 +45,10 @@
 }
 
 .embla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin: 1rem;
 }
 .embla__viewport {
@@ -74,8 +78,10 @@
   }
 }
 .embla__slide {
+  position: relative;
   min-width: 0;
   max-width: 100%;
+  height: 100%;
 }
 .embla__slide-link {
   text-decoration: none;
@@ -96,17 +102,17 @@
   background: var(--hot-badge-sale-background-color);
   color: var(--text-color-light);
 }
-.grouped {
+.embla__control {
   display: flex;
-  justify-content: center;
   align-items: end;
+  justify-content: center;
 }
 .embla__badge--out-of-stock {
   position: absolute;
   display: flex;
   justify-content: center;
   font-size: 17px;
-  width: 242px;
+  width: 100%;
   margin: 4px;
   padding: 4px 8px;
   background: var(--hot--badge-out-of-stock-background-color);
@@ -114,6 +120,7 @@
 }
 
 .embla__product-name {
+  margin-top: 8px;
   color: var(--primary-background-color);
 }
 
@@ -141,7 +148,7 @@
   height: 40px;
   width: 100px;
   margin-top: 24px;
-  font-size: 15px;
+  font-weight: lighter;
   border-radius: 8px;
   transition: background-color 0.3s ease;
   color: var(--text-color-light);
@@ -150,4 +157,55 @@
 
 .embla__product-btn:hover {
   background-color: var(--primary-bar-background-color);
+}
+
+.embla__btn--out-of-stock {
+  position: relative;
+  pointer-events: none;
+}
+
+.embla__btn--out-of-stock::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 110%;
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.7); 
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.embla__btn--out-of-stock:hover {
+  background-color: var(--primary-button-color); 
+  cursor: not-allowed; 
+}
+
+
+.embla__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.embla__arrow-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.embla__arrow--left {
+  margin-right: auto;
+}
+
+.embla__arrow--left .embla__arrow-svg {
+  transform: rotate(180deg);
+}
+
+.embla__arrow--right {
+  margin-left: auto;
 }
