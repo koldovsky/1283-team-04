@@ -5,6 +5,7 @@
     width: 100%;
     gap: 24px;
     padding: 30px 0px 60px;
+    overflow-x: hidden;
 
 }
 
@@ -17,15 +18,44 @@
     min-width: 272px;
 
 }
+
 .promotion-cards__card-content {
     display: flex;
     flex-direction: column;
+    flex: 1 1;
     border-radius: 10px;
-    flex: 1 1 80%;
     background-size: cover;
-    justify-content: space-around;
-    padding: 25px 20px
 }
+
+.promotion-cards__item--wireless .promotion-cards__card-content{
+    flex-basis: 80%;
+    justify-content: space-around;
+    padding: 7% 8%;
+}
+.promotion-cards__item--wireless .promotion-cards__placeholder {
+    flex-basis: 20%;
+}
+
+.promotion-cards__item--keygo .promotion-cards__card-content{
+    flex-basis: 38%;
+    text-align:right;
+    justify-content: space-between;
+    padding: 10% 10%;
+}
+.promotion-cards__item--keygo .promotion-cards__placeholder {
+    flex-basis: 62%;
+}
+
+.promotion-cards__item--novascreen .promotion-cards__card-content{
+    flex-basis: 38%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.promotion-cards__item--novascreen .promotion-cards__card-content{
+    flex-basis: 62%;
+}
+
 .promotion-cards__item--wireless .promotion-cards__card-content {
     background-image: url('../images/promotion-cards/wireless-mouse-promotion-card.png');
     min-height: 352.75px;
@@ -43,9 +73,11 @@
     min-height: 455.6px;
     background-position: 50% 0%;
 }
-.promotion-cards__placeholder{
+
+.promotion-cards__item--wireless .promotion-cards__placeholder {
     flex: 0 0 20%;
 }
+
 .promotion-cards__item h2 {
     font-size: 30px;
     color: var(--primary-text-color);
@@ -70,14 +102,24 @@
     font-size: 21px;
 }
 
-.promotion-cards__countdown{
+.promotion-cards__countdown {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
 }
 
-.promotion-cards__countdown-item{
+.promotion-cards__countdown-item {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    outline: 1px solid black;
+    border-radius: 5px;
+    width: 44.55px;
+    max-width: 75.9px;
+    aspect-ratio: 1/1;
 }
 
 @media (min-width: 480px) {
@@ -85,7 +127,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0px;
-    }
+    }    
 
     .promotion-cards__item--wireless {
         flex-basis: 100%;
@@ -106,13 +148,12 @@
         flex-basis: 50%;
         min-width: auto;
         padding-left: 15px;
-        ;
     }
 }
 
 @media (min-width: 1000px) {
     .promotion-cards__item--wireless {
-        flex-basis: 33%;
+            flex-basis: 33%;
     }
 
     .promotion-cards__item--keygo {
@@ -126,12 +167,11 @@
     .promotion-cards__item--keygo .promotion-cards__card-content {
         background-position: 86% 0%;
     }
+
     .promotion-cards__item h2 {
-        font-size: 36px;}
-
-}
-
-
+        font-size: 36px;
+    }    
+}    
 
 
 
@@ -157,7 +197,9 @@
 
 
 
-/* .promotion-cards {
+
+
+    /* .promotion-cards {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -312,4 +354,5 @@
 
 .promotion-cards__countdown-label {
     font-size: 17px;
-} */
+} 
+*/
