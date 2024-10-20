@@ -1,88 +1,119 @@
 .promo-offers {
-    font-family: "Nunito", sans-serif;
-    font-weight: 200;
-  }
-  
-  .promo-offers h2 {
-    font-size: 30px;
+      padding-top: 15px;
+      padding-bottom: 30px;
   }
 
-  .promo-shipping__button,
-  .promo-product-offer__button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff7b16;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .promo-shipping__button:hover {
-    background-color: #272727;
-  }
-  
-  .promo-product-offer__button:hover {
-    background-color: #fff;
-    color: #323232;
-  }
+.promo-offers h2 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: bold;
+}
 
-  .promo-shipping__highlight {
-    font-weight: 700;
-    color: #3b82f6;
-  }
+.promo-offers__container {
+  display: flex;
+  justify-content: space-between; /* Простір між блоками */
+  align-items: center; /* Вирівнювання по вертикалі */
+  flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
+  flex-direction: column; /* Вирівнюємо блоки один під одним */
+}
+.promo-shipping__article,
+.promo-product-offer__aside {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+.promo-shipping__article {
+  background-image: url("../img/playing_room.png");
+  background-size: cover;
+  background-position: left center;
+  background-size: cover; /* Картинка займає весь блок */
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem; /* 5px */
+}
 
-  .promo-shipping__article,
-  .promo-product-offer__aside {
-    display: inline-block;
-    vertical-align: top;
-    width: 48%;
-    padding-top: 29px;
-    padding-bottom: 29px;
-  }
-  
-  .promo-shipping__article {
-    padding-left: 22px;
-    padding-right: 29px;
-  }
-  
-  .promo-product-offer__aside {
-    padding-right: 22px;
-    width: 48%;
-  }
-  
+.promo-product-offer__aside {
+  background-image: url("../img/gray-haired-man-gaming.png");
+  background-size: cover;
+  background-position: left center;
+  background-size: cover; /* Картинка займає весь блок */
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem; /* 5px */
+}
+
+.promo-shipping__heading {
+  color: var(--primary-text-color);
+}
+
+.promo-shipping__highlight {
+  color: var(--secondary-background-color);
+}
+
+.promo-shipping__description {
+  font-size: 1.1875rem; /* 19px */
+  color: var(--border-color);
+  font-weight: 600;
+}
+
+.promo-shipping__features {
+  font-size: 0.938rem; /* 15px */
+  color: var(--text-color);
+}
+
+.promo-shipping__features li::marker {
+  color: var(--highlight-color); /* Колір маркера */
+}
+
+.promo-shipping__button,
+.promo-product-offer__button {
+  display: inline-block;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.3125rem; /* 5px */
+  font-size: 0.875rem; /* 14px */
+  font-weight: bold;
+}
+
+.promo-shipping__button:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.promo-product-offer__button:hover {
+  background-color: var(--btn-primary-alt-hover-color);
+  color: var(--btn-primary-alt-hover-bg-color);
+}
+
+.promo-product-offer__title {
+  color: var(--secondary-color);
+}
+
+.promo-product-offer__highlight {
+  color: var(--primary-color);
+}
+
+.promo-product-offer__price {
+    /* promo-product-offer__new-price 128 */
+    font-size: 1.4375rem; /* 23px */
+    color: var(--secondary-background-color);
+    font-weight: bold;
+}
+
+.promo-product-offer__old-price {
+  text-decoration: line-through;
+  font-size: 1.0625rem; /* 17px */
+  color: var(--description-text-color);
+}
+
+.promo-product-offer__promo-info {
+  font-size: 0.938rem; /* 15px */
+  color: var(--description-text-color);
+}
+
+/* Медіа-запити для адаптивності */
+@media (min-width: 600px) {
   .promo-offers__container {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-  .promo-shipping__article,
-  .promo-product-offer__aside {
-    flex: 1;
-    margin: 0 10px;
-  }
-  
-  .promo-product-offer__old-price {
-    text-decoration: line-through;
-    font-size: 17px;
-  }
-  
-  .promo-product-offer__new-price {
-    font-size: 23px;
-    font-weight: 700;
-    color: #3b82f6;
-  }
-  
-  .promo-product-offer__promo-info {
-    font-size: 14px;
-  }
-  
-  .promo-shipping__description {
-    font-size: 19px;
-  }
-  
-  .promo-shipping__features {
-    font-size: 14px;
-  }
-  
+}
