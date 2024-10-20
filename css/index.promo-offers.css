@@ -22,7 +22,7 @@
   width: 48%;
 }
 .promo-shipping__article {
-  background-image: url("../img/playing_room.png");
+  background-image: url("../images/playing_room.png");
   background-size: cover;
   background-position: left center;
   background-size: cover; /* Картинка займає весь блок */
@@ -31,7 +31,7 @@
 }
 
 .promo-product-offer__aside {
-  background-image: url("../img/gray-haired-man-gaming.png");
+  background-image: url("../images/gray-haired-man-gaming.png");
   background-size: cover;
   background-position: left center;
   background-size: cover; /* Картинка займає весь блок */
