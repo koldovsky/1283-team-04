@@ -1,0 +1,119 @@
+.promo-offers {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.promo-offers h2 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: bold;
+}
+
+.promo-offers__container {
+  display: flex;
+  justify-content: space-between; /* Простір між блоками */
+  align-items: center; /* Вирівнювання по вертикалі */
+  flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
+  flex-direction: column; /* Вирівнюємо блоки один під одним */
+}
+.promo-shipping__article,
+.promo-product-offer__aside {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+.promo-shipping__article {
+  background-image: url("../images/playing_room.png");
+  background-size: cover;
+  background-position: left center;
+  background-size: cover; /* Картинка займає весь блок */
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem; /* 5px */
+}
+
+.promo-product-offer__aside {
+  background-image: url("../images/gray-haired-man-gaming.png");
+  background-size: cover;
+  background-position: left center;
+  background-size: cover; /* Картинка займає весь блок */
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem; /* 5px */
+}
+
+.promo-shipping__heading {
+  color: var(--primary-text-color);
+}
+
+.promo-shipping__highlight {
+  color: var(--secondary-background-color);
+}
+
+.promo-shipping__description {
+  font-size: 1.1875rem; /* 19px */
+  color: var(--border-color);
+  font-weight: 600;
+}
+
+.promo-shipping__features {
+  font-size: 0.938rem; /* 15px */
+  color: var(--text-color);
+}
+
+.promo-shipping__features li::marker {
+  color: var(--secondary-background-color);
+}
+
+.promo-shipping__button,
+.promo-product-offer__button {
+  display: inline-block;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  background-color: var(--brand-color);
+  color: var(--secondary-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.3125rem; /* 5px */
+  font-size: 0.875rem; /* 14px */
+  font-weight: bold;
+}
+
+.promo-shipping__button:hover {
+  color: var(--primary-text-color);
+}
+
+.promo-product-offer__button:hover {
+  background-color: var(--btn-primary-alt-hover-color);
+  color: var(--hover-bg-color);
+}
+
+.promo-product-offer__title {
+  color: var(--secondary-color);
+}
+
+.promo-product-offer__highlight {
+  color: var(--brand-color);
+}
+
+.promo-product-offer__price {
+  /* promo-product-offer__new-price 128 */
+  font-size: 1.4375rem; /* 23px */
+  color: var(--secondary-background-color);
+  font-weight: bold;
+}
+
+.promo-product-offer__old-price {
+  text-decoration: line-through;
+  font-size: 1.0625rem; /* 17px */
+  color: var(--description-text-color);
+}
+
+.promo-product-offer__promo-info {
+  font-size: 0.938rem; /* 15px */
+  color: var(--description-text-color);
+}
+
+/* Медіа-запити для адаптивності */
+@media (min-width: 600px) {
+  .promo-offers__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
