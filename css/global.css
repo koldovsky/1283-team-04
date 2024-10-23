@@ -1,7 +1,4 @@
 /* General Styles */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-
 *,
 *::after,
 *::before {
@@ -15,7 +12,6 @@
   --secondary-color: #ffffff;
   --primary-background-color: #272727;
   --secondary-background-color: #1c4c97;
-  --primary-text-color: rgb(39, 39, 39);
   --secondary-text-color: rgb(208 208 208);
   --text-color: rgb(106, 106, 106);
   --border-color: rgb(78 78 78);
