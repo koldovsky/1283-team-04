@@ -22,16 +22,21 @@
   line-height: 40px;
   text-align: center;
   font-size: 40px;
-  font-family: "Bebas Neue", sans-serif;
-
-  @media (min-width: 768px) {
+  font-family: var(--subtitle-font-family);
+}
+@media (min-width: 768px) {
+  .promo__subtitle {
     font-size: 52px;
     line-height: 76px;
   }
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
+  .promo__subtitle {
     font-size: 64px;
   }
 }
+
 .promo__highlight {
   color: var(--secondary-background-color);
 }
@@ -150,6 +155,8 @@
   margin-top: 24px;
   font-weight: lighter;
   border-radius: 8px;
+  border-width: 0.5px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
   color: var(--text-color-light);
   background-color: var(--primary-button-color);
@@ -165,23 +172,22 @@
 }
 
 .embla__btn--out-of-stock::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
   width: 110%;
   height: 110%;
-  background-color: rgba(255, 255, 255, 0.7); 
+  background-color: rgba(255, 255, 255, 0.7);
   z-index: 1;
   pointer-events: none;
   border-radius: inherit;
 }
 
 .embla__btn--out-of-stock:hover {
-  background-color: var(--primary-button-color); 
-  cursor: not-allowed; 
+  background-color: var(--primary-button-color);
+  cursor: not-allowed;
 }
-
 
 .embla__arrow {
   display: flex;

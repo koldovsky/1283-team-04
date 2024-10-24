@@ -43,6 +43,7 @@
   --hot-badge-sale-background-color: #464C5C;
   --hot--badge-out-of-stock-background-color: #ffddd9;
   --hot--badge-out-of-stock-text-color: #cc3833;
+  --subtitle-font-family: "Bebas Neue", sans-serif;
 }
 
 body {
