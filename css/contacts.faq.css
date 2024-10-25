@@ -9,7 +9,7 @@
   margin: 0 auto;
   padding: 0 24px 0 24px;
   display: grid;
-  grid-template-columns: 2fr 1fr; 
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "faq__contact-form";
   gap: 20px;
   align-items: end;
@@ -18,12 +18,11 @@
 @media (max-width: 768px) {
   .faq__wrapper {
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "faq__accordion-flush"
       "faq__contact-form";
   }
 }
-
 
 .faq__title {
   font-size: 12px;
@@ -73,6 +72,45 @@
   width: 100%;
 }
 
+.accordion-item:last-child {
+  border-bottom: var(--accordion-underline-properties) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: var(--secondary-section-bg-color);
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.faq__accordion-btn {
+  font-size: 22px;
+  font-weight: 600;
+  background-color: var(--secondary-section-bg-color);
+}
+
+@media (min-width: 992) {
+  .faq__accordion-btn {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768) {
+  .faq__accordion-btn {
+    font-size: 23px;
+  }
+}
+
+.faq__accordion-body {
+  background-color: var(--secondary-section-bg-color);
+  color: var(--text-description-color);
+}
+
 .faq__contact-form {
   grid-area: "faq__contact-form";
   margin: 0 auto;
@@ -85,11 +123,11 @@
 }
 
 .faq__form {
-    width: 100%;
-    max-width: 600px; 
-    margin-top: 12px;
-    padding: 0 16px; 
-    box-sizing: border-box; 
+  width: 100%;
+  max-width: 600px;
+  margin-top: 12px;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 .faq__form-input,
@@ -128,3 +166,44 @@
   background-color: var(--primary-bar-background-color);
 }
 
+.modal-dialog-centered {
+  justify-content: center;
+}
+
+.modal-content {
+  width: 350px;
+}
+
+.modal-header {
+  font-family: var(--subtitle-font-family);
+  flex-direction: column-reverse;
+  border-bottom: 0;
+}
+
+.modal-title {
+  line-height: 40px;
+}
+
+.modal-header svg {
+  width: 50px;
+  height: 50px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-footer {
+  border-top: 0;
+  justify-content: center;
+}
+
+.btn-success {
+  width: 18%;
+  border-width: 0;
+  background-color: var(--brand-color);
+}
+
+.btn-success:hover {
+  background-color: var(--primary-bar-background-color);
+}
