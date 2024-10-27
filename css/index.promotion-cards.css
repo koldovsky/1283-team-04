@@ -57,22 +57,20 @@
     background-image: url('../images/promotion-cards/monitor-promotion-card.png');
     min-height: 455.6px;
     background-position: 50% 0%;
-    flex-basis: 60%;
+    flex-basis: 50%;
     justify-content:space-around;
     text-align: center;
-    padding-bottom: 98%;
-    padding-top: 9%;
 }
 
 .promotion-cards__item--novascreen .promotion-cards__placeholder {
-    flex-basis: 40%;
+    flex-basis: 50%;
     content: "";
 }
 .promotion-cards__countdown {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5%;
+    gap: 3%;
 }
 
 .promotion-cards__countdown-item {
@@ -92,6 +90,16 @@
     color: var(--primary-text-color);
 }
 
+.promotion-cards__countdown-number{
+    font-family: var(--subtitle-font-family);
+    font-size: 36px;
+}
+
+.promotion-cards__purpose-span{
+    font-size: 17px;
+    color: var(--promotion-cards-subtitle-color);
+}
+
 .promotion-cards__price-value {
     font-size: 17px;
     color: var(--text-color)
@@ -109,6 +117,23 @@
 
 .promotion-cards__price-old {
     font-size: 21px;
+}
+
+.promotion-cards__card-content p{
+    font-size: 17px;
+}
+
+.promotion-cards__label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.promotion-cards__item--keygo .promotion-cards__label{
+    color: var(--secondary-background-color);
+}
+
+.promotion-cards__item--novascreen .promotion-cards__label{
+    color: var(--brand-color);
 }
 
 @media (min-width: 480px) {
@@ -163,5 +188,15 @@
     .promotion-cards__item h2 {
         font-size: 36px;
         padding-bottom: 0px;
-    }    
+    }
+}
+
+@media (min-width: 1200px){
+    .promotion-cards__card-content{
+        max-height: 375px;
+    }
+
+    .promotion-cards__item--novascreen .promotion-cards__card-content{
+        min-height: 0px;
+    }
 }
