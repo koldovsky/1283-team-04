@@ -1,5 +1,7 @@
 function init() {
   import("./burger.js");
+  import("./category.js");
+  import("./category-filters.js");
 }
 
 const totalPartials = document.querySelectorAll(

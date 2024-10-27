@@ -12,7 +12,7 @@
     padding: 130px 0px 160px 0px;
     height:100%; 
     position: relative;
-
+    overflow: hidden;
 }
 
 .hero-content {

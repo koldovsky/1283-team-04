@@ -45,7 +45,24 @@
   --hot--badge-out-of-stock-text-color: #cc3833;
   --accordion-underline-properties: 1px solid #ddd;
   --subtitle-font-family: "Bebas Neue", sans-serif;
-}
+  --filters-background-color: rgb(247, 248, 250);
+  --category-title-color: #f47920;
+  --category-subtitle-color: #666;
+  --filters-title-color: #f47920;
+  --filters-range-background: #f47920;
+  --filters-option-background: #f0f0f0;
+  --filters-range-value-background: #e0e0e0;
+  --filters-apply-button-background: #f47920;
+  --filters-apply-button-color: #fff;
+  --filters-clear-button-color: #f47920;
+  --product-background-color: #fff;
+  --product-price-color: #f47920;
+  --product-price-old-color: rgb(39, 39, 39);
+  --product-button-background: #003366;
+  --product-button-hover-background: #0055a5;
+  --product-label-background: #333;
+  --product-label-color: #fff;
+  }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -61,4 +78,10 @@ img {
 .container {
   max-width: var(--content-container-size);
   margin: auto;
+}
+
+@media (max-width: 767px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
 }

@@ -22,12 +22,15 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
+      <!-- Header Nav Section -->
       <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
       ></div>
+      <!-- Header Hero Section -->
       <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -50,6 +53,12 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.promotion-cards.partial.html"
       ></div>
+      <!-- Categories Section -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.categories.partial.html"
+      ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
