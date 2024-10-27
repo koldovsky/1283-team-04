@@ -45,11 +45,29 @@
 }
 .in-store-services__list {
   display: flex;
-  gap: 3%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2%;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 992px) {
+    flex-wrap: nowrap;
+  }
 }
-.in-store-services__list__item:last-child {
-  display: none;
+
+.in-store-services__list__item {
+  flex: 49%;
+  margin-bottom: 40px;
+
+  @media (min-width: 992px) {
+    flex: 100%;
+    margin-bottom: 0;
+  }
 }
+
 .in-store-services__list__item-title {
   margin-top: 20px;
   font-size: 24px;
