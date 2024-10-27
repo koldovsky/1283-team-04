@@ -2,6 +2,7 @@ function init() {
   import("./burger.js");
   import("./category.js");
   import("./category-filters.js");
+  import("./promotion-cards-timer.js");
 }
 
 const totalPartials = document.querySelectorAll(
