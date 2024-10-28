@@ -6,10 +6,12 @@ function initBurgerMenu() {
   if (burgerButton && mobileMenu && closeButton) {
     burgerButton.addEventListener("click", function () {
       mobileMenu.classList.add("header__mobile-menu--visible");
+      document.body.classList.add('no-scroll');
     });
 
     closeButton.addEventListener("click", function () {
       mobileMenu.classList.remove("header__mobile-menu--visible");
+      document.body.classList.remove('no-scroll');
     });
   }
 }
