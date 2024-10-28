@@ -156,11 +156,11 @@
   }
   .promo-shipping__button {
     display: flex;
-    align-items: center;
+/*     align-items: center; */
     justify-content: center;
     width: 140px;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 12px 12px;
+    margin-top: 40px;
   }
   .promo-product-offer__promo-info {
     padding: 0px;
