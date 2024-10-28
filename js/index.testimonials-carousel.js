@@ -64,16 +64,13 @@ function prevSlide() {
   renderCarousel();
 }
 
-// Автоматичне перемикання слайдів
 setInterval(nextSlide, 5000);
 renderCarousel();
 
-// Додаємо обробники подій для кнопок, якщо вони існують
 const nextBtn = document.querySelector('.testimonials__slider__btn-prev');
 if (nextBtn) nextBtn.addEventListener('click', nextSlide);
 
 const prevBtn = document.querySelector('.testimonials__slider__btn-next');
 if (prevBtn) prevBtn.addEventListener('click', prevSlide);
 
-// Перемальовуємо слайдер при зміні розміру вікна
 window.addEventListener('resize', renderCarousel);
