@@ -93,6 +93,7 @@ button.testimonials__slider__btn-next {
 
 .testimonials__slider-item-name {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 24px;
   color: var(--primary-text-color);
   font-weight: 700;
