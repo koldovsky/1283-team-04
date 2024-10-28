@@ -153,6 +153,7 @@
   display: block;
   width: 100%;
   padding: 12px;
+  margin-bottom: 24px;
   background-color: var(--secondary-section-bg-color);
   border: 2px solid var(--brand-color-light);
   border-radius: 8px;
