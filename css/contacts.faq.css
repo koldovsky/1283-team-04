@@ -136,6 +136,10 @@
   color: var( --contacts-faq-validation-error-message-color);
 }
 
+.error {
+  min-height: 24px;
+}
+
 .faq__form-control input:focus {
   outline: 0;
 }
@@ -153,7 +157,6 @@
   display: block;
   width: 100%;
   padding: 12px;
-  margin-bottom: 24px;
   background-color: var(--secondary-section-bg-color);
   border: 2px solid var(--brand-color-light);
   border-radius: 8px;
@@ -164,6 +167,7 @@
 .faq__form-textarea {
   height: 120px;
   resize: none;
+   margin-bottom: 24px;
 }
 
 .faq__form-submit {

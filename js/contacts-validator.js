@@ -39,38 +39,51 @@ const isValidPhone = (phone) => {
   return phonePattern.test(phone);
 };
 
+const validateUsername = (usernameValue) => {
+  if (usernameValue === '') {
+    setError(username, 'Username is required');
+    return false;
+  } else {
+    setSuccess(username);
+    return true;
+  }
+};
+
+const validateEmail = (emailValue) => {
+  if (emailValue === '') {
+    setError(email, 'Email is required');
+    return false;
+  } else if (!isValidEmail(emailValue)) {
+    setError(email, 'Email is not valid');
+    return false;
+  } else {
+    setSuccess(email);
+    return true;
+  }
+};
+
+const validatePhone = (phoneValue) => {
+  if (phoneValue === '') {
+    setError(phone, 'Phone is required');
+    return false;
+  } else if (!isValidPhone(phoneValue)) {
+    setError(phone, 'Phone is not valid');
+    return false;
+  } else {
+    setSuccess(phone);
+    return true;
+  }
+};
+
 const validateInputs = () => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
   const phoneValue = phone.value.trim();
   let isValid = true;
 
-  if (usernameValue === '') {
-    setError(username, 'Username is required');
-    isValid = false;
-  } else {
-    setSuccess(username);
-  }
-
-  if (emailValue === '') {
-    setError(email, 'Email is required');
-    isValid = false;
-  } else if (!isValidEmail(emailValue)) {
-    setError(email, 'Email is not valid');
-    isValid = false;
-  } else {
-    setSuccess(email);
-  }
-
-  if (phoneValue === '') {
-    setError(phone, 'Phone is required');
-    isValid = false;
-  } else if (!isValidPhone(phoneValue)) {
-    setError(phone, 'Phone is not valid');
-    isValid = false;
-  } else {
-    setSuccess(phone);
-  }
+  isValid &= validateUsername(usernameValue);
+  isValid &= validateEmail(emailValue);
+  isValid &= validatePhone(phoneValue);
 
   return isValid;
 };
