@@ -3,6 +3,7 @@ function init() {
   import("./category.js");
   import("./category-filters.js");
   import("./promotion-cards-timer.js");
+  import("./index.testimonials-carousel.js");
 }
 
 const totalPartials = document.querySelectorAll(

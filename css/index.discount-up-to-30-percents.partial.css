@@ -1,0 +1,74 @@
+.discount-upto__container{
+    background-image: url("../images/backgroundupto.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    box-sizing: border-box;
+    display: block;
+    flex-basis: 100%;
+    min-width: 320px;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 130px 0px 160px 0px;
+    height:100%; 
+    position: relative;
+    overflow: hidden;
+}
+
+.discount-upto__content{
+    color: var(--secondary-color);
+    width: 1200px;
+    height: 585.39px;
+    padding: 0px 15px;
+    margin: 0px 170.5px;
+}
+
+.discount-upto__title{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 109px;
+    font-weight: 400;
+    line-height: 109px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.discount-upto__btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--brand-color);
+  color: var(--secondary-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 12px 21px;
+  margin-top: 35px;
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .discount-upto__container {
+      padding: 20px;
+      max-width: 600px; 
+    }
+  
+    .discount-upto__title {
+      font-size: 20px; 
+    }
+  
+    .discount-upto__description {
+      font-size: 14px; 
+    }
+  
+    .discount-upto__btn {
+      width: 120px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .discount-upto__container {
+      max-width: 1000px; 
+    }
+  }

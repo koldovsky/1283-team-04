@@ -63,6 +63,9 @@
   --product-label-background: #333;
   --product-label-color: #fff;
   --promotion-cards-subtitle-color: #4D4D4D;
+  --contacts-faq-validation-error-properties: 1px solid #FF0000;
+  --contacts-faq-validation-success-properties: 1px solid #00b600;
+  --contacts-faq-validation-error-message-color: #FF0000;
   }
 
 body {
