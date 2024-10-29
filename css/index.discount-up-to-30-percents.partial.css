@@ -1,4 +1,4 @@
-.upto__container{
+.discount-upto__container{
     background-image: url('/images/backgroundupto.png');
     min-width: 100%;
     min-height: 100%;
@@ -8,27 +8,27 @@
 }
 
 @media (max-width: 768px) and (min-width: 600px) {
-    .upto__container {
+    .discount-upto__container {
       padding: 20px;
       max-width: 600px; 
     }
   
-    .upto__title {
+    .discount-upto__title {
       font-size: 20px; 
     }
   
-    .upto__description {
+    .discount-upto__description {
       font-size: 14px; 
     }
   
-    .upto__btn {
+    .discount-upto__btn {
       width: 120px;
       padding: 8px 16px;
     }
   }
   
   @media (min-width: 1200px) {
-    .upto__container {
+    .discount-upto__container {
       max-width: 1000px; 
     }
   }
