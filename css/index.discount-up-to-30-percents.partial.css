@@ -1,0 +1,34 @@
+.upto__container{
+    background-image: url('../images/backgroundupto.png');
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .upto__container {
+      padding: 20px;
+      max-width: 600px; 
+    }
+  
+    .upto__title {
+      font-size: 20px; 
+    }
+  
+    .upto__description {
+      font-size: 14px; 
+    }
+  
+    .upto__btn {
+      width: 120px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .upto__container {
+      max-width: 1000px; 
+    }
+  }
