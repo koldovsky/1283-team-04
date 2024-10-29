@@ -2,6 +2,7 @@ const form = document.querySelector(".faq__form");
 const username = document.querySelector(".faq__form-input.username");
 const email = document.querySelector(".faq__form-input.e-mail");
 const phone = document.querySelector(".faq__form-input.phone");
+const textarea = document.querySelector(".faq__form-textarea");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault(); 
@@ -75,6 +76,13 @@ const validatePhone = (phoneValue) => {
   }
 };
 
+const clearInputs = () => {
+  username.value = "";
+  email.value = "";
+  phone.value = "";
+  textarea.value = "";
+}
+
 const validateInputs = () => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
@@ -84,6 +92,10 @@ const validateInputs = () => {
   isValid &= validateUsername(usernameValue);
   isValid &= validateEmail(emailValue);
   isValid &= validatePhone(phoneValue);
+
+  if(isValid){
+    clearInputs();
+  }
 
   return isValid;
 };
