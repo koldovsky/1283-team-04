@@ -25,6 +25,20 @@
     text-align: center;
 }
 
+.discount-upto__btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--brand-color);
+  color: var(--secondary-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 12px 21px;
+  margin-top: 35px;
+}
+
 @media (max-width: 768px) and (min-width: 600px) {
     .discount-upto__container {
       padding: 20px;
