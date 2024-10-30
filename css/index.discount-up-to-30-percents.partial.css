@@ -8,6 +8,7 @@
     display: block;
     flex-basis: 100%;
     min-width: 320px;
+    max-width: fit-content;
     justify-content: space-between; 
     align-items: center;
     padding: 130px 0px 160px 0px;
