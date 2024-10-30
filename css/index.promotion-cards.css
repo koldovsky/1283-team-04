@@ -215,8 +215,4 @@
     .promotion-cards__item--novascreen .promotion-cards__card-content{
         min-height: 0px;
     }
-
-    .promotion-cards{
-        padding: 30px 40px 60px;
-    }
 }
