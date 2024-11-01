@@ -74,12 +74,12 @@
   }
   @media (min-width: 720px) {
     .embla__container {
-      grid-auto-columns: 33% 33% 33%;
+      grid-auto-columns: 50% 50%;
     }
   }
   @media (min-width: 950px) {
     .embla__container {
-      grid-auto-columns: 25% 25% 25% 25%;
+      grid-auto-columns: 33% 33% 33%;
     }
   }
   .embla__slide {
