@@ -1,3 +1,5 @@
+import { addToCart } from './global.cart.js';
+
 /**
  * Filter state object
  */
@@ -66,9 +68,14 @@ function renderProducts(products) {
             }
             <p class="product__price">$${product.price.toFixed(2)} USD</p>
           </div>
-          <button class="product__button">Buy Now</button>
+          <button class="product__button product__button--cart">Buy Now</button>
         </div>
     `;
+    
+    const addToCartButton = productElement.querySelector('.product__button--cart');
+    addToCartButton.addEventListener('click', () => {
+      addToCart(product.name, product.price);
+    });
 
     productsContainer.appendChild(productElement);
   });

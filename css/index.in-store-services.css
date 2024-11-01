@@ -17,7 +17,7 @@
 
 .in-store-services__subtitle {
   margin-top: 10px;
-  line-height: 76px;
+  line-height: 50px;
   text-align: center;
   font-size: 40px;
   font-family: "Bebas Neue", sans-serif;
@@ -28,6 +28,7 @@
 
   @media (min-width: 992px) {
     font-size: 64px;
+    line-height: 76px;
   }
 }
 
