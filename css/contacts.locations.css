@@ -38,19 +38,11 @@
       font-size: 52px;
       line-height: 76px;
     }
-    .locations__image{
-      width: 100%;
-      min-height: auto;
-    }
   }
   
   @media (min-width: 992px) {
     .locations__subtitle {
       font-size: 64px;
-    }
-    .locations__image{
-      width: 100%;
-      min-height: auto;
     }
   }
   
