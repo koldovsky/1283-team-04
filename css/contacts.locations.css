@@ -24,6 +24,15 @@
     font-size: 40px;
     font-family: var(--subtitle-font-family);
   }
+
+  .locations__image {
+    background-image: url(../images/testemonials.webp);
+    width: 100%;
+    min-height: 650px;
+    background-position: center center;
+    border-radius: 10px;
+  }
+
   @media (min-width: 768px) {
     .locations__subtitle {
       font-size: 52px;
