@@ -25,14 +25,14 @@
     font-family: var(--subtitle-font-family);
   }
   @media (min-width: 768px) {
-    .promo__subtitle {
+    .locations__subtitle {
       font-size: 52px;
       line-height: 76px;
     }
   }
   
   @media (min-width: 992px) {
-    .promo__subtitle {
+    .locations__subtitle {
       font-size: 64px;
     }
   }
