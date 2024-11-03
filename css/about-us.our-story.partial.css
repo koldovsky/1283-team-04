@@ -1,3 +1,63 @@
-.our-story__container{
-    background-color: aqua;
+.our-story__text-content {
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel__card {
+    min-width: 100%;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: left;
+}
+
+
+@media (min-width: 768px) {
+    .carousel__card {
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel__card {
+        min-width: 25%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .carousel__nav {
+        font-size: 1.5em;
+        color: #FF6F3C;
+    }
+}
+
+.carousel__nav {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    z-index: 1;
+}
+
+.carousel__nav--prev {
+    left: 10px;
+}
+
+.carousel__nav--next {
+    right: 10px;
 }
