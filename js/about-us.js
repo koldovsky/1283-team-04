@@ -1,5 +1,6 @@
 function init() {
     import("./burger.js");
+    import("./about-us.in-store-services-carousel.js");
   }
   
   const totalPartials = document.querySelectorAll(
