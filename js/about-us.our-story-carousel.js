@@ -10,7 +10,7 @@ const cards = [
         <h4 class="carousel__heading">Expanding the Range</h4>
         <p class="carousel__text">With growing customer demand, the store expanded its product categories.</p>
     </div>`,
-
+    
     `<div class="carousel__card">
         <h3 class="carousel__year">2019</h3>
         <h4 class="carousel__heading">Brands Partnership</h4>
@@ -43,7 +43,9 @@ function renderCarousel() {
     
     if (window.matchMedia("(min-width: 1024px)").matches) {
         const thirdSlideIdx = (currentIndex + 2) % cards.length;
-        carouselTrack.innerHTML += cards[thirdSlideIdx]; // Показуємо третій слайд
+        carouselTrack.innerHTML += cards[thirdSlideIdx];
+        const fourthSlideIdx = (currentIndex + 3) % cards.length;
+        carouselTrack.innerHTML += cards[fourthSlideIdx]; // Показуємо третій слайд
     }
 }
 
@@ -59,10 +61,10 @@ function prevSlide() {
 
 renderCarousel();
 
-const nextButton = document.querySelector('.carousel__nav--next');
+const nextButton = document.querySelector('.our-story__carousel-nav--next');
 if (nextButton) nextButton.addEventListener('click', nextSlide);
 
-const prevButton = document.querySelector('.carousel__nav--prev');
+const prevButton = document.querySelector('.our-story__carousel-nav--prev');
 if (prevButton) prevButton.addEventListener('click', prevSlide);
 
 window.addEventListener('resize', renderCarousel);
