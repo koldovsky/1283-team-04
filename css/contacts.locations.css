@@ -28,7 +28,7 @@
   .locations__image {
     background-image: url(../images/locations_photo.webp);
     max-width: 100%;
-    height: auto;
+    height: 100%;
     background-position: center center;
     border-radius: 10px;
   }
