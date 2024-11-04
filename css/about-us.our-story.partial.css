@@ -16,9 +16,11 @@
     position: relative;
 }
 
-.carousel__track {
+.our-story__carousel-track {
     display: flex;
-    transition: transform 0,3ms ease;
+    transition: transform 0.5ms ease;
+    will-change: transform;
+    overflow: hidden;
 }
 
 .carousel__card {
