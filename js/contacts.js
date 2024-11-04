@@ -13,4 +13,5 @@ function init() {
     loadedPartialsCount++;
     if (loadedPartialsCount === totalPartials) init();
   });
+
   
