@@ -2,7 +2,6 @@ function init() {
     import("./burger.js");
     import("./promo-embla.js")
     import("./contacts-validator.js");
-    import("./contacts-toggle.js")
   }
   
   const totalPartials = document.querySelectorAll(
