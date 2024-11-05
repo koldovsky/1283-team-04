@@ -1,4 +1,5 @@
 .our-mission {
+  font-family: "Nunito", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--secondary-section-bg-color);
@@ -74,6 +75,12 @@
   }
 }
 
+@media (min-width: 430px) {
+  .our-mission__aside {
+    height: 320px;
+  }
+}
+
 @media (min-width: 768px) {
   .our-mission {
     grid-template-columns: 1fr 1fr;
@@ -96,8 +103,51 @@
   }
 }
 
-@media (min-width: 1268px) {
-  .our-mission__subtitle {
-    font-size: 4.2rem;
+@media (min-width: 1000px){
+  .our-mission__motto{
+    font-size: 20px;
+  }
+  .our-mission__paragraph--first,
+  .our-mission__paragraph--second{
+font-size: 18px;
   }
 }
+
+@media (min-width: 1268px) {
+  .our-mission__content{
+    padding-right: 2.6rem;
+  }
+  .our-mission__subtitle {
+    font-size: 4rem;
+  } 
+  .our-mission__aside{
+    height: 720px;
+  }
+  .our-mission__image {
+    background-position: bottom 20%;
+  }
+  }
+
+  @media (min-width: 1400px) {
+    .our-mission__content{
+      padding-left: 4rem;
+      padding-right: 6rem;
+    }
+  }
+  @media (min-width: 1500px) {
+    .our-mission__content{
+      padding-left: 6rem;
+    }
+  }
+  @media (min-width: 1600px) {
+    .our-mission__content{
+      padding-left: 7rem;
+      padding-right: 7rem;
+    }
+  }
+  @media (min-width: 1700px) {
+    .our-mission__content{
+      padding-left: 8rem;
+      padding-right: 9rem;
+    }
+  }
