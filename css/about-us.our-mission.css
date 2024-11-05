@@ -1,26 +1,29 @@
 .our-mission {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: var(--secondary-section-bg-color);
 }
 
 .our-mission__content {
   padding: 5.625rem 1.875rem;
-  background-color: var(--secondary-section-bg-color);
 }
 
 .our-mission__title {
+  letter-spacing: 2.4px;
   color: var(--brand-color);
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 700;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1rem;
 }
 
 .our-mission__subtitle {
+  font-family: "Bebas Neue", sans-serif;
   color: var(--primary-text-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: normal;
 }
 
 .our-mission__subtitle--slash {
@@ -30,31 +33,71 @@
 .our-mission__motto {
   font-size: 1.1875rem;
   font-weight: 600;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.2rem;
   color: var(--border-color);
 }
 
-.our-mission__text {
-  font-size: 1.125rem;
+.our-mission__paragraph--first,
+.our-mission__paragraph--second {
+  font-size: 1.08rem;
   color: var(--text-description-color);
 }
-.our-mission__image img {
+
+.our-mission__paragraph--first {
+  padding-bottom: 1.2rem;
+}
+
+.our-mission__aside {
+  height: 225px;
+}
+
+.our-mission__image {
   width: 100%;
-  height: 50%;
-  object-fit: cover;
+  height: 100%;
+  background-image: url("../images/ergonomic-desk-setup-yellow-orange-tones.png");
+  background-size: cover;
+  background-position: center 15%;
+}
+
+@media (min-width: 410px) {
+  .our-mission__aside {
+    height: 250px;
+  }
+}
+
+@media (min-width: 430px) {
+  .our-mission__aside {
+    height: 260px;
+  }
+  .our-mission__image {
+    background-position: center 22%;
+  }
 }
 
 @media (min-width: 768px) {
   .our-mission {
     grid-template-columns: 1fr 1fr;
   }
-  .our-mission {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .our-mission__content {
+    padding: 6.564rem 1.875rem;
   }
-  .our-mission__image img {
+  .our-mission__aside {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+  }
+  .our-mission__image {
+    background-position: right 12%;
+  }
+}
+
+@media (min-width: 820px) {
+  .our-mission__subtitle {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1268px) {
+  .our-mission__subtitle {
+    font-size: 4.2rem;
   }
 }
