@@ -157,4 +157,8 @@
         color: #666;
         z-index: 1;
     }
+
+    .our-story__container{
+        padding: 120px 12.5%;
+    }
 }

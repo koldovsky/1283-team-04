@@ -29,6 +29,7 @@
 
 .promotion-cards__item--wireless .promotion-cards__card-content {
     background-image: url('../images/promotion-cards/wireless-mouse-promotion-card.png');
+    background-repeat: no-repeat;
     min-height: 352.75px;
     background-position: 54% 0%;
     flex-basis: 80%;
