@@ -34,15 +34,6 @@
     object-fit: cover;
   }
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
   @media (min-width: 768px) {
     .locations__subtitle {
       font-size: 52px;
