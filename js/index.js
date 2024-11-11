@@ -4,6 +4,8 @@ function init() {
   import("./promotion-cards-timer.js");
   import("./index.testimonials-carousel.js");
   import("./global.cart.js");
+  import("./index.promo-offers.js")
+  
 }
 
 const totalPartials = document.querySelectorAll(
