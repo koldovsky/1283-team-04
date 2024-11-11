@@ -1,3 +1,4 @@
+/* Базові стилі для мобільної версії */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,9 +22,9 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%; 
-  min-height: 350px; 
+  min-height: 350px;
   height: auto;
-  flex: 1 1 55%; 
+  flex: 1 1 55%;
 }
 
 .product-display__details {
@@ -32,12 +33,12 @@ body {
   padding: 90px 30px;
   width: 100%;
   box-sizing: border-box;
-  flex: 1 1 45%; 
+  flex: 1 1 45%;
 }
 
 .product-display__status {
   font-size: 14px;
-  color: #f37021; 
+  color: #f37021;
   font-weight: bold;
 }
 
@@ -51,7 +52,7 @@ body {
 
 .product-display__price {
   font-size: 28px;
-  color: #f37021; 
+  color: #f37021;
   font-weight: bold;
   margin: 15px 0;
 }
@@ -66,7 +67,7 @@ body {
 .product-display__specs-title {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #0000FF;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -86,7 +87,7 @@ body {
   padding: 8px 20px;
   font-size: 12px;
   background-color: #f37021;
-  color: #fff; /* Білий текст */
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
@@ -97,26 +98,26 @@ body {
   font-weight: bold;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border: none;
-  width: 30%;
+  width: 100%;
 }
 
 .product-display__order-btn:hover {
-  background-color: #211d1c; 
+  background-color: #211d1c;
 }
 
+/* Стілі для ширини екрану більше 770px (планшети) */
 @media (min-width: 770px) {
   .product-display {
     flex-direction: row;
   }
 
   .product-display__image {
-    flex: 1 1 55%; 
-    background-position: center;
+    flex: 1 1 55%;
   }
 
   .product-display__details {
     padding: 90px 30px;
-    flex: 1 1 45%; 
+    flex: 1 1 45%;
   }
 
   .product-display__title {
@@ -126,8 +127,13 @@ body {
   .product-display__price {
     font-size: 30px;
   }
+
+  .product-display__order-btn {
+    width: 30%;
+  }
 }
 
+/* Стілі для ширини екрану більше 1000px (десктопи) */
 @media (min-width: 1000px) {
   .product-display__details {
     padding: 110px 40px;
@@ -142,16 +148,16 @@ body {
   }
 }
 
+/* Стілі для ширини екрану більше 1200px */
 @media (min-width: 1200px) {
   .product-display__details {
     margin: 0 15%;
   }
 }
+
 .slash {
-  color: #0000FF; 
-  font-weight: bold; 
+  color: #0000FF;
+  font-weight: bold;
 }
-.product-display__specs-title {
-  color: #0000FF; 
-}
+
 
